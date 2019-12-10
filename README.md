@@ -51,6 +51,8 @@ describe('#sum', () => {
 
 ### 1 - Implemente os testes presentes no arquivo `tests/last.spec.js`
 
+### 2 - Implemente os testes presentes no arquivo `tests/greeting.spec.js`
+
 ---
 
 ## Instruções para entregar seu projeto
