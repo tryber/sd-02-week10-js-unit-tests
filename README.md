@@ -49,6 +49,8 @@ describe('#sum', () => {
 
 ## Requisitos do projeto
 
+### 1 - Implemente os testes presentes no arquivo `tests/last.spec.js`
+
 ---
 
 ## Instruções para entregar seu projeto
