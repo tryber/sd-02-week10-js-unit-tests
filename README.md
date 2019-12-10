@@ -53,6 +53,8 @@ describe('#sum', () => {
 
 ### 2 - Implemente os testes presentes no arquivo `tests/greeting.spec.js`
 
+### 3 - Implemente a função no arquivo `src/numbers.js`
+
 ---
 
 ## Instruções para entregar seu projeto
