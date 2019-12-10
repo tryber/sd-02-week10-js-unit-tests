@@ -20,6 +20,8 @@ Você deverá complementar as funções e testes unitários de forma a satisfaze
 As funções a serem implementadas estão dentro da pasta `src` enquanto os respectivos testes estão na pasta `tests`.
 O nome dos arquivos também seguem uma ordem definida, basicamente os arquivos de teste possuem o nome do arquivo alvo (arquivo da funcionalidade) acrescido do nome `.spec.js`.
 
+Cada função possui um bloco de comentários em suas primeiras linhas explicando qual é o trabalho que a função deve realizar
+
 ---
 
 ## Requisitos do projeto
