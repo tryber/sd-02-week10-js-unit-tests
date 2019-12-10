@@ -22,6 +22,29 @@ O nome dos arquivos também seguem uma ordem definida, basicamente os arquivos d
 
 Cada função possui um bloco de comentários em suas primeiras linhas explicando qual é o trabalho que a função deve realizar
 
+Cada teste não implementado deve ser finalizado seguinte o que se pede no próprio título do teste, por exemplo:
+```javascript
+function sum(a, b) {
+  return a + b
+}
+```
+
+imagine que você possui a função `sum(a, b)` definida acima e o seguinte teste não implementado:
+```javascript
+describe('#sum', () => {
+  // it('the sum of 4 and 5 should be 9')
+})
+```
+
+você completará esse teste com o seguinte código:
+```javascript
+describe('#sum', () => {
+  it('the sum of 4 and 5 should be 9', () => {
+    expect(sum(4, 5)).toBe(9)
+  })
+})
+```
+
 ---
 
 ## Requisitos do projeto
