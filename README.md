@@ -17,6 +17,9 @@ Após clonar o projeto e instalar as dependências (mais sobre isso abaixo), voc
 Todos os arquivos estritamente necessários para finalizar o projeto já estão criados, **não** sendo necessário a criação de outros arquivos.
 Você deverá complementar as funções e testes unitários de forma a satisfazer os requisitos listados na próxima seção.
 
+As funções a serem implementadas estão dentro da pasta `src` enquanto os respectivos testes estão na pasta `tests`.
+O nome dos arquivos também seguem uma ordem definida, basicamente os arquivos de teste possuem o nome do arquivo alvo (arquivo da funcionalidade) acrescido do nome `.spec.js`.
+
 ---
 
 ## Requisitos do projeto
