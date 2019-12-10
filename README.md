@@ -6,9 +6,16 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ## O que deverá ser desenvolvido
 
+Você implementará várias funções que visam atender os requisitos propostos e testes unitários que vão garantir a correta implementação.
+
 ---
 
 ## Desenvolvimento
+
+Este repositório contém um _template_ de uma aplicação **NodeJS** (observe a existência do arquivo _package.json_).
+Após clonar o projeto e instalar as dependências (mais sobre isso abaixo), você não precisará realizar nenhuma configuração adicional.
+Todos os arquivos estritamente necessários para finalizar o projeto já estão criados, **não** sendo necessário a criação de outros arquivos.
+Você deverá complementar as funções e testes unitários de forma a satisfazer os requisitos listados na próxima seção.
 
 ---
 
@@ -74,8 +81,6 @@ module.exports = last
 ---
 
 ### DURANTE O DESENVOLVIMENTO
-
-* ⚠ **LEMBRE-SE DE CRIAR TODOS OS ARQUIVOS DENTRO DA PASTA COM O SEU NOME** ⚠
 
 * Faça `commits` das alterações que você fizer no código regularmente
 
