@@ -59,6 +59,12 @@ describe('#sum', () => {
 
 ### 5 - Implemente a função no arquivo `src/duplicate.js`
 
+### 6 - Implemente os testes presentes no arquivo `tests/average.spec.js`
+
+Utilize `describe` para organizar os testes
+
+### 7 - Implemente a função no arquivo `src/average.js`
+
 ---
 
 ## Instruções para entregar seu projeto
