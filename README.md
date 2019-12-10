@@ -55,6 +55,10 @@ describe('#sum', () => {
 
 ### 3 - Implemente a função no arquivo `src/numbers.js`
 
+### 4 - Implemente o teste presente no arquivo `tests/duplicate.spec.js`
+
+### 5 - Implemente a função no arquivo `src/duplicate.js`
+
 ---
 
 ## Instruções para entregar seu projeto
