@@ -71,6 +71,10 @@ Utilize `describe` para organizar os testes
 
 ### 10 - Implemente os testes presentes no arquivo `tests/printBinary.spec.js`
 
+### 11 - Implemente a função no arquivo `src/primeFactors.js`
+
+### 12 - Implemente os testes presentes no arquivo `tests/primeFactors.spec.js` utilizando a biblioteca NodeJS Assert
+
 ---
 
 ## Instruções para entregar seu projeto
