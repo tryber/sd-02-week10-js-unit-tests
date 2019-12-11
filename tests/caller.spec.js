@@ -12,4 +12,4 @@ describe('#caller', () => {
   // it('check if the function passed as parameter was really called')
 
   // it('call a function three times and check it')
-})
+});

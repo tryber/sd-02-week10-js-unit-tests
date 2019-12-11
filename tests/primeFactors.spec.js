@@ -4,7 +4,7 @@ const assert = require('assert');
 describe('#primeFactors', () => {
   it('1 should return []', () => {
     expect(primeFactors(1)).toBe([]);
-  })
+  });
 
   // descomente os testes e implemente-os
 
@@ -18,4 +18,4 @@ describe('#primeFactors', () => {
   // it('9 should return [3, 3]')
   // it('1657 should return [1657]')
   // it('1659 should return [3, 7, 79]')
-})
+});

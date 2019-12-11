@@ -5,4 +5,4 @@
 
 function duplicate(params) {}
 
- module.exports = duplicate;
+module.exports = duplicate;

@@ -4,8 +4,8 @@
 */
 
 function last(param) {
-  let last = arguments[arguments.length - 1];
-  return last[last.length - 1] || last;
+  const lastParam = arguments[arguments.length - 1];
+  return lastParam[lastParam.length - 1] || lastParam;
 }
 
 module.exports = last;

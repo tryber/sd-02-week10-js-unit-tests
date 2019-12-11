@@ -8,4 +8,4 @@ describe('#last', () => {
   // it('the last element of "xyz" is "z"')
 
   // it('the last element of 1,2,3,4 is 4')
-})
+});
