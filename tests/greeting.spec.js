@@ -1,4 +1,4 @@
-const greeting = require('../src/greeting')
+const greeting = require('../src/greeting');
 
 describe('#greeting', () => {
   // descomente os testes e implemente-os

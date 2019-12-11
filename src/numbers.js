@@ -3,8 +3,6 @@
   e retorna `true` se todos os parâmetros forem do tipo Number e `false` caso contrário
 */
 
-function numbers(params) {
-  // implemente esta função
-}
+function numbers(params) {}
 
-module.exports = numbers
+module.exports = numbers;

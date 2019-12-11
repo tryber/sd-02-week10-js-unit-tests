@@ -4,8 +4,8 @@
 */
 
 function greeting(param) {
-  if (!param) throw new Error('You must send something to greet!')
-  return `Hello ${param}!`
+  if (!param) throw new Error('You must send something to greet!');
+  return `Hello ${param}!`;
 }
 
-module.exports = greeting
+module.exports = greeting;

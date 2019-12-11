@@ -1,4 +1,4 @@
-const last = require('../src/last')
+const last = require('../src/last');
 
 describe('#last', () => {
   // descomente os testes e implemente-os

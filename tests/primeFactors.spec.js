@@ -1,9 +1,9 @@
-const primeFactors = require('../src/primeFactors')
-const assert = require('assert')
+const primeFactors = require('../src/primeFactors');
+const assert = require('assert');
 
 describe('#primeFactors', () => {
   it('1 should return []', () => {
-    expect(primeFactors(1)).toBe([])
+    expect(primeFactors(1)).toBe([]);
   })
 
   // descomente os testes e implemente-os

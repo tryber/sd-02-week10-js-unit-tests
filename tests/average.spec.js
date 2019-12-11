@@ -1,4 +1,4 @@
-const average = require('../src/average')
+const average = require('../src/average');
 
 // descomente os testes e implemente-os
 

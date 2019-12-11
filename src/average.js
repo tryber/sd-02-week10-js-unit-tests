@@ -3,8 +3,6 @@
   e retorna a média dos valores recebidos
 */
 
-function average(params) {
+function average(params) {}
 
-}
-
-module.exports = average
+module.exports = average;

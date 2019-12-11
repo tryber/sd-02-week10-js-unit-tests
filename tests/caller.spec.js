@@ -1,4 +1,4 @@
-const caller = require('../src/caller')
+const caller = require('../src/caller');
 
 describe('#caller', () => {
   // descomente os testes e implemente-os
