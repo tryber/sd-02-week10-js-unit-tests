@@ -67,6 +67,10 @@ Utilize `describe` para organizar os testes
 
 ### 8 - Implemente os testes presentes no arquivo `tests/caller.spec.js`
 
+### 9 - Implemente a função no arquivo `src/printBinary.js`
+
+### 10 - Implemente os testes presentes no arquivo `tests/printBinary.spec.js`
+
 ---
 
 ## Instruções para entregar seu projeto
