@@ -65,6 +65,8 @@ Utilize `describe` para organizar os testes
 
 ### 7 - Implemente a função no arquivo `src/average.js`
 
+### 8 - Implemente os testes presentes no arquivo `tests/caller.spec.js`
+
 ---
 
 ## Instruções para entregar seu projeto
