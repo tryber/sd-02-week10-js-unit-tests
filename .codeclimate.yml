@@ -48,6 +48,8 @@ plugins:
     checks:
       no-undef:
         enabled: false
+      prefer-rest-params:
+        enabled: false
     config:
       extensions:
         - .js

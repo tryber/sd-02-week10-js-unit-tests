@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: "error"*/
 /*
   A função last deve retornar o último elemento contido no parâmetro ${param}
   O parâmetro ${param} pode ser de qualquer tipo
