@@ -19,31 +19,9 @@ Você deverá completar as funções e testes unitários de forma a satisfazer o
 
 As funções a serem implementadas estão dentro da pasta `src` enquanto os respectivos testes estão na pasta `tests`.
 O nome dos arquivos também seguem uma ordem definida. Basicamente, os arquivos de teste possuem o nome do arquivo alvo (arquivo da funcionalidade) acrescido do nome `.spec.js`.
+Existirá um arquivo `src/blabla.js` que conterá a implementação de uma função e um arquivo `tests/blabla.spec.js` com os testes unitários referentes à função presente no arquivo `src/blabla.js`
 
 Cada função possui um bloco de comentários em suas primeiras linhas explicando qual é o trabalho que a função deve realizar.
-
-Cada teste não implementado deve ser finalizado seguindo o que se pede no próprio título do teste. Por exemplo:
-```javascript
-function sum(a, b) {
-  return a + b
-}
-```
-
-Suponha que você possua a função `sum(a, b)` definida acima e o seguinte teste para implementar:
-```javascript
-describe('#sum', () => {
-  // it('expects the sum of 4 and 5 to be 9')
-})
-```
-
-Você precisará completar esse teste com o seguinte código:
-```javascript
-describe('#sum', () => {
-  it('the sum of 4 and 5 should be 9', () => {
-    expect(sum(4, 5)).toBe(9)
-  })
-})
-```
 
 ---
 
@@ -63,15 +41,15 @@ describe('#sum', () => {
 
 Utilize `describe`s para organizar os testes.
 
-### 7 - Implemente a função no arquivo `src/average.js`
+### 7 - Implemente a função do arquivo `src/average.js`
 
 ### 8 - Implemente os testes presentes no arquivo `tests/caller.spec.js`
 
-### 9 - Implemente a função no arquivo `src/printBinary.js`
+### 9 - Implemente a função do arquivo `src/printBinary.js`
 
 ### 10 - Implemente os testes presentes no arquivo `tests/printBinary.spec.js`
 
-### 11 - Implemente a função no arquivo `src/primeFactors.js`
+### 11 - Implemente a função do arquivo `src/primeFactors.js`
 
 ### 12 - Implemente os testes presentes no arquivo `tests/primeFactors.spec.js` utilizando a biblioteca NodeJS Assert
 
