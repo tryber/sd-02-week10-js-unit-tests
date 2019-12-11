@@ -1,11 +1,7 @@
 const last = require('../src/last');
 
-describe('#last', () => {
-  // descomente os testes e implemente-os
-
-  // it('the last element of [1, 2, 3, 4] is 4')
-
-  // it('the last element of "xyz" is "z"')
-
-  // it('the last element of 1,2,3,4 is 4')
-});
+// A função deve receber uma quantidade qualquer de parâmetros
+// A função deve retornar o último elemento do parâmetro passado
+// Se a função receber uma lista, deve retornar o último elemento
+// Se a função receber uma string, deve retornar o último caracter
+// Se a função receber vários parâmetros, deve retornar o último parâmetro

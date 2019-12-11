@@ -1,15 +1,7 @@
 const caller = require('../src/caller');
 
-describe('#caller', () => {
-  // descomente os testes e implemente-os
-
-  // it('caller should call a function and check its return')
-
-  // it('caller should call a function that make a sum')
-
-  // it('caller should call a function that make a multiply')
-
-  // it('check if the function passed as parameter was really called')
-
-  // it('call a function three times and check it')
-});
+// A função deve receber 3 parâmetros
+// O primeiro parâmetro deve ser uma função
+// O segundo e terceiro parâmetros podem ser de qualquer tipo
+// A função deve executar a função (primeiro parâmetro) com os outros parâmetros recebidos
+// e retornar o resultado

@@ -1,11 +1,11 @@
 const average = require('../src/average');
 
-// descomente os testes e implemente-os
+// A função deve receber uma quantidade qualquer de parâmetros
+// A função deve retornar a média dos números que receber
+// Caso a função receba algum valor não número, o valor undefined deve ser retornado
 
-// it('average of 3, 4, 5 should be 4')
-
-// it('average of 0, 2, 1 should be 1')
-
-// it('average of 9, "x", 0, 1 should be undefined')
-
-// it('average of 2, undefined, null should be undefined')
+describe('#average', () => {
+  it('expect average of 3, 4, 5 should be 4', () => {
+    expect(average(3, 4, 5).toBe(4))
+  })
+})

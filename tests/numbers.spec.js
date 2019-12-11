@@ -1,5 +1,9 @@
 const numbers = require('../src/numbers');
 
+// A função deve receber uma quantidade qualquer de parâmetros
+// A função deve retornar o valor true se todos os elementos forem do tipo Number
+// A função deve retornar o valor false se algum elemento não for do tipo Number
+
 describe('#numbers', () => {
   it('the params 1, 4, 3, 2, 5 are numbers', () => {
     expect(numbers(1, 4, 3, 2, 5)).toBeTruthy();
