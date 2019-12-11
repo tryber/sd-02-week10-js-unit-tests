@@ -6,7 +6,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ## O que deverá ser desenvolvido
 
-Você implementará várias funções que visam atender os requisitos propostos e testes unitários que vão garantir a correta implementação.
+Você implementará várias funções para atender aos requisitos propostos e testes unitários para garantir sua correta implementação.
 
 ---
 
@@ -14,29 +14,29 @@ Você implementará várias funções que visam atender os requisitos propostos 
 
 Este repositório contém um _template_ de uma aplicação **NodeJS** (observe a existência do arquivo _package.json_).
 Após clonar o projeto e instalar as dependências (mais sobre isso abaixo), você não precisará realizar nenhuma configuração adicional.
-Todos os arquivos estritamente necessários para finalizar o projeto já estão criados, **não** sendo necessário a criação de outros arquivos.
-Você deverá complementar as funções e testes unitários de forma a satisfazer os requisitos listados na próxima seção.
+Todos os arquivos estritamente necessários para finalizar o projeto já estão criados, **não** sendo necessária a criação de outros arquivos.
+Você deverá completar as funções e testes unitários de forma a satisfazer os requisitos listados na próxima seção.
 
 As funções a serem implementadas estão dentro da pasta `src` enquanto os respectivos testes estão na pasta `tests`.
-O nome dos arquivos também seguem uma ordem definida, basicamente os arquivos de teste possuem o nome do arquivo alvo (arquivo da funcionalidade) acrescido do nome `.spec.js`.
+O nome dos arquivos também seguem uma ordem definida. Basicamente, os arquivos de teste possuem o nome do arquivo alvo (arquivo da funcionalidade) acrescido do nome `.spec.js`.
 
-Cada função possui um bloco de comentários em suas primeiras linhas explicando qual é o trabalho que a função deve realizar
+Cada função possui um bloco de comentários em suas primeiras linhas explicando qual é o trabalho que a função deve realizar.
 
-Cada teste não implementado deve ser finalizado seguinte o que se pede no próprio título do teste, por exemplo:
+Cada teste não implementado deve ser finalizado seguindo o que se pede no próprio título do teste. Por exemplo:
 ```javascript
 function sum(a, b) {
   return a + b
 }
 ```
 
-imagine que você possui a função `sum(a, b)` definida acima e o seguinte teste não implementado:
+Suponha que você possua a função `sum(a, b)` definida acima e o seguinte teste para implementar:
 ```javascript
 describe('#sum', () => {
-  // it('the sum of 4 and 5 should be 9')
+  // it('expects the sum of 4 and 5 to be 9')
 })
 ```
 
-você completará esse teste com o seguinte código:
+Você precisará completar esse teste com o seguinte código:
 ```javascript
 describe('#sum', () => {
   it('the sum of 4 and 5 should be 9', () => {
@@ -53,15 +53,15 @@ describe('#sum', () => {
 
 ### 2 - Implemente os testes presentes no arquivo `tests/greeting.spec.js`
 
-### 3 - Implemente a função no arquivo `src/numbers.js`
+### 3 - Implemente a função do arquivo `src/numbers.js`
 
 ### 4 - Implemente o teste presente no arquivo `tests/duplicate.spec.js`
 
-### 5 - Implemente a função no arquivo `src/duplicate.js`
+### 5 - Implemente a função do arquivo `src/duplicate.js`
 
 ### 6 - Implemente os testes presentes no arquivo `tests/average.spec.js`
 
-Utilize `describe` para organizar os testes
+Utilize `describe`s para organizar os testes.
 
 ### 7 - Implemente a função no arquivo `src/average.js`
 
@@ -94,11 +94,11 @@ Utilize `describe` para organizar os testes
     * Exemplo: `git branch`
   * Se não estiver, mude para a branch `master`
     * Exemplo: `git checkout master`
-  * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
+  * Agora crie uma branch para qual você vai submeter os `commits` do seu projeto
     * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
     * Exemplo: `git checkout -b joaozinho-js-unit-tests`
 
-4. Faça alterações em alguma das funções que precisam de implementação, por exemplo a `last.js` em `src/`:
+4. Faça as alterações em, por exemplo, alguma das funções que precisam de implementação. Por exemplo, a `last.js` em `src/`:
 ```jsx
 function last(list) {
   // add your implementation here
