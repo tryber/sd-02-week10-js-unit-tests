@@ -1,6 +1,6 @@
 const caller = require('../src/caller')
 
-describe('#call', () => {
+describe('#caller', () => {
   // descomente os testes e implemente-os
 
   // it('caller should call a function and check its return')
