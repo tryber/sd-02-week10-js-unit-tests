@@ -6,7 +6,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ## O que deverá ser desenvolvido
 
-Você implementará várias funções para atender aos requisitos propostos e testes unitários para garantir sua correta implementação.
+Você implementará várias funções para atender aos requisitos propostos e testes unitários para garantir que sua implementação está correta.
 
 ---
 
@@ -17,9 +17,9 @@ Após clonar o projeto e instalar as dependências (mais sobre isso abaixo), voc
 Todos os arquivos estritamente necessários para finalizar o projeto já estão criados, **não** sendo necessária a criação de outros arquivos.
 Você deverá completar as funções e testes unitários de forma a satisfazer os requisitos listados na próxima seção.
 
-As funções a serem implementadas estão dentro da pasta `src` enquanto os respectivos testes estão na pasta `tests`.
+As funções a serem implementadas estão dentro da pasta `src` e seus respectivos testes estão na pasta `tests`.
 O nome dos arquivos também seguem uma ordem definida. Basicamente, os arquivos de teste possuem o nome do arquivo alvo (arquivo da funcionalidade) acrescido do nome `.spec.js`.
-Existirá um arquivo `src/blabla.js` que conterá a implementação de uma função e um arquivo `tests/blabla.spec.js` com os testes unitários referentes à função presente no arquivo `src/blabla.js`
+Existirá um arquivo `src/blabla.js` que conterá a implementação de uma função e um arquivo `tests/blabla.spec.js` com os testes unitários referentes à função presente no arquivo `src/blabla.js`.
 
 Cada função possui um bloco de comentários em suas primeiras linhas explicando qual é o trabalho que a função deve realizar.
 
