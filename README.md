@@ -51,6 +51,61 @@ Cada função possui um bloco de comentários em suas primeiras linhas explicand
 
 ### 12 - Implemente os casos de testes no arquivo `tests/primeFactors.spec.js` utilizando a biblioteca NodeJS Assert
 
+### 13 - (BÔNUS) Implemente os casos de testes no arquivo `tests/rpnCalculator.spec.js`
+
+### 14 - (BÔNUS) Implemente a função do arquivo `src/rpnCalculator.js`
+
+Reverse Polish Notation é uma notação usada para representar expressões matemáticas.
+
+A notação mais comum é: `3 + 4`.
+Esta mesma expressão em _RPN_ (_Reverse Polish Notation_) é: `3 4 +`.
+Basicamente na _RPN_ os **operadores** seguem seus **operandos**.
+Isto faz com que essa notação não necessite de parênteses para representar precedencia em operações.
+
+
+
+Vamos aos exemplos para que fique claro:
+
+#### Expressão 1:
+`3 + 4` => `3 4 +`
+
+- `3 4 +` (realiza-se a soma `3 + 4` = `7`)
+- `7`
+
+#### Expressão 2:
+`3 - 4 + 5` => `3 4 - 5 +`
+
+- `3 4 - 5 +` (realiza-se a subtração `3 - 4` = `-1`)
+- `-1 5 +` (realiza-se a soma `-1 + 5` = `4`)
+- `4`
+
+#### Expressão 3:
+`3 - 4 * 5` => `3 4 5 * -`
+
+- `3 4 5 * -` (realiza-se a multiplicação `4 * 5` = `20`)
+- `3 20 -` (realiza-se a subtração `3 - 20` = `-17`)
+- `-17`
+
+#### Expressão 4:
+`(3 - 4) * 5` => `3 4 - 5 *`
+
+- `3 4 - 5 *` (realiza-se a subtração `3 - 4` = `-1`)
+- `-1 5 *` (realiza-se a mutiplicação `-1 * 5` = `-5`)
+- `-5`
+
+#### Expressão 5:
+`((15 / (7 - (1 + 1))) * 3) - (2 + (1 + 1))` => `15 7 1 1 + - / 3 * 2 1 1 + + -`
+
+- `15 7 1 1 + - / 3 * 2 1 1 + + -` (realiza-se a soma `1 + 1` = `2`)
+- `15 7 2 - / 3 * 2 1 1 + + -` (reliza-se a subtração `7 - 2` = `5`)
+- `15 5 / 3 * 2 1 1 + + -` (realiza-se a divisão `15 / 5` = `3`)
+- `3 3 * 2 1 1 + + -` (realiza-se a multiplicação `3 * 3` = `9`)
+- `9 2 1 1 + + -` (realiza-se a soma `1 + 1` = `2`)
+- `9 2 2 + -` (realiza-se a soma `2 + 2` = `4`)
+- `9 4 -` (realiza-se a subtração `9 - 4` = `5`)
+- `5`
+
+
 ---
 
 ## Instruções para entregar seu projeto
