@@ -62,8 +62,6 @@ Esta mesma expressão em _RPN_ (_Reverse Polish Notation_) é: `3 4 +`.
 Basicamente na _RPN_ os **operadores** seguem seus **operandos**.
 Isto faz com que essa notação não necessite de parênteses para representar precedencia em operações.
 
-
-
 Vamos aos exemplos para que fique claro:
 
 #### Expressão 1:
@@ -105,6 +103,9 @@ Vamos aos exemplos para que fique claro:
 - `9 4 -` (realiza-se a subtração `9 - 4` = `5`)
 - `5`
 
+#### Referência
+
+[Reverse Polish Notation on Wikipedia](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
 
 ---
 
