@@ -6,4 +6,5 @@ const greeting = require('../src/greeting');
 
 test('Mensagem de saudação', () => {
   expect('Hello Fernando!').toBe(greeting('Fernando'));
+  expect(greeting).toThrowError(new Error('You must send something to greet!'));
 });

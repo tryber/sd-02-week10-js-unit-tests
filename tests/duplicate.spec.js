@@ -12,4 +12,13 @@ describe('#duplicate', () => {
   it('the params 1, 2, 3, 2 are duplicated', () => {
     expect(duplicate(1, 2, 3, 2)).toBeTruthy();
   });
+
+  it('the params carro, casa, lapis, Ronaldinho o Bruxo are not duplicated', () => {
+    expect(duplicate('carro', 'casa', 'lapis', 'Ronaldinho o Bruxo')).toBeFalsy();
+  });
+
+  it('the params carro, casa, lapis, Ronaldinho o Bruxo, Assina Fernandão, Ronaldinho o Bruxo  are duplicated', () => {
+    expect(duplicate('carro', 'casa', 'lapis', 'Ronaldinho o Bruxo', 'Assina Fernadão', 'Ronaldinho o Bruxo' )).toBeTruthy();
+  });
+
 });
