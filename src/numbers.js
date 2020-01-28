@@ -5,12 +5,12 @@
 
 function numbers(...params) {
   let eNum = true;
-  params.forEach(numero => {
+  params.forEach((numero) => {
     if (typeof (numero) !== 'number') {
       eNum = false;
     }
-  })
-  return eNum
+  });
+  return eNum;
 }
 
 module.exports = numbers;

@@ -8,5 +8,5 @@ function greeting(param) {
   if (!param) throw new Error('You must send something to greet!');
   return `Hello ${param}!`;
 }
-console.log(greeting())
+
 module.exports = greeting;
