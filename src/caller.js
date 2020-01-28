@@ -15,4 +15,6 @@ function caller(fn, a, b) {
   return fn(a,b)
 }
 
+console.log(typeof Set)
+
 module.exports = caller;
