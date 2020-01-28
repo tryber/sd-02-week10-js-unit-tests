@@ -12,6 +12,7 @@ function duplicate(...params) {
     }
   }
   if (itemEqual !== undefined) return true;
+  return false;
 }
 
 module.exports = duplicate;
