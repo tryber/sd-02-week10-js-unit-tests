@@ -8,11 +8,11 @@ const caller = require('../src/caller');
 
 
 test('#caller', () => {
-  function sum (...params) {
-        return params.reduce((cc, current) => cc + current);
+  function sum(...params) {
+    return params.reduce((cc, current) => cc + current);
   }
 
-  function mult (...params) {
+  function mult(...params) {
     return params.reduce((cc, current) => cc * current);
   }
   expect(caller(sum, 2, 5)).toBe(7);
