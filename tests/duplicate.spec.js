@@ -12,4 +12,8 @@ describe('#duplicate', () => {
   it('the params 1, 2, 3, 2 are duplicated', () => {
     expect(duplicate(1, 2, 3, 2)).toBeTruthy();
   });
+  it('params duplicated with a string in the mix', () => {
+    expect(duplicate('1', 2, 3, 3)).toBeTruthy();
+    expect(duplicate(1, 2, '3', 3)).toBeFalsy();
+  });
 });
