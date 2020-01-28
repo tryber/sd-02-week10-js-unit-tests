@@ -11,5 +11,5 @@ describe('#average', () => {
 
   it('espera "undefined" quando há parâmetros que não sejam números', () => {
     expect(average(2, 'xablau', 4)).toEqual(undefined);
-  })
+  });
 });

@@ -6,7 +6,7 @@ const caller = require('../src/caller');
 // A função deve executar a função (primeiro parâmetro) com os outros parâmetros recebidos
 // e retornar o resultado
 
-it('testando a função caller', done => {
+it('testando a função caller', (done) => {
   const fn = jest.fn();
   caller(fn, 'a', 'b');
   expect(fn).toHaveBeenCalled();
@@ -15,4 +15,4 @@ it('testando a função caller', done => {
   expect(fn).toHaveBeenCalled();
   expect(fn).toHaveBeenCalledWith(3, 'cachorro');
   done();
-})
+});

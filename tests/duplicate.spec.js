@@ -19,4 +19,4 @@ describe('#duplicate', () => {
   });
 });
 
-// testar também com um parâmetro e sem parâmetro;
+// testar também com um parâmetro e sem parâmetro

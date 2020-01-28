@@ -6,10 +6,12 @@
 // const numbers = require('./numbers');
 function average(...params) {
   const elementsAreNumber = params.every(element => typeof element === 'number');
-  if (elementsAreNumber)
+  if (elementsAreNumber) {
     return params.reduce((acc, cur) => acc + cur) / params.length;
+  }
+  return undefined;
   // if (numbers(...params)) return [...params].reduce(((acc, cur) => acc + cur) / params.length);
-  // return undefined;  
+  // return undefined
 }
 
 module.exports = average;
