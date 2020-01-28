@@ -7,5 +7,5 @@ const assert = require('assert');
 assert.deepEqual(primeFactors(4), [1, 2, 4]);
 assert.deepEqual(primeFactors(10), [1, 2, 5, 10]);
 assert.throws(() => {
-    primeFactors(4.5);
-})
+  primeFactors(4.5);
+});
