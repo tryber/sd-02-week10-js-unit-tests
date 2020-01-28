@@ -6,10 +6,10 @@
 
 function average(...params) {
   const sumAll = params.reduce((cc, current) => cc + current);
-  const media = sumAll /params.length;
+  const media = sumAll / params.length;
   if (params.some(number => typeof number === 'string')) {
     return undefined;
-  } 
+  }
   return media;
 }
 
