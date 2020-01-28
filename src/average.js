@@ -3,9 +3,9 @@
   e retorna a média dos valores recebidos
   Caso a função receba algum valor não número, o valor undefined deve ser retornado
 */
-
+const numbers = require('./numbers')
 function average(...params) {
-  if (params.some(Element => typeof (Element) !== 'number')) {
+  if (!numbers(...params)) {
     return undefined;
   }
   const media = (params.reduce((cur, acc) => {
@@ -14,5 +14,4 @@ function average(...params) {
   }, 0) / params.length);
   return media;
 }
-
 module.exports = average;
