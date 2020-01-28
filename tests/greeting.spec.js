@@ -5,5 +5,5 @@ const greeting = require('../src/greeting');
 // A mensagem do erro deve ser 'You must send something to greet!'
 
 test('Mensagem de saudação', () => {
-    expect('Hello Fernando!').toBe(greeting('Fernando'))
-})
+  expect('Hello Fernando!').toBe(greeting('Fernando'));
+});
