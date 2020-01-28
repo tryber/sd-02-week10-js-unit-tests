@@ -18,3 +18,5 @@ describe('#duplicate', () => {
     expect(duplicate('gato', 'cachorro', 'papagaio')).toBeFalsy();
   });
 });
+
+// testar também com um parâmetro e sem parâmetro;
