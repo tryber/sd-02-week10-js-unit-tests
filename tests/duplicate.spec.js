@@ -18,6 +18,6 @@ describe('#duplicate', () => {
   });
 
   it('the params carro, casa, lapis, Ronaldinho o Bruxo, Assina Fernandão, Ronaldinho o Bruxo  are duplicated', () => {
-    expect(duplicate('carro', 'casa', 'lapis', 'Ronaldinho o Bruxo', 'Assina Fernandão', 'Ronaldinho o Bruxo')).toBeTruthy();
+    expect(duplicate('carro',3 ,'casa', 'lapis', 'Ronaldinho o Bruxo',10 ,'Assina Fernandão', 'Ronaldinho o Bruxo')).toBeTruthy();
   });
 });
