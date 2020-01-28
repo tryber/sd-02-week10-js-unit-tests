@@ -9,7 +9,7 @@ const caller = require('../src/caller');
 describe('#Caller', () => {
   const some = jest.fn((a, b) => a + b);
   const div = jest.fn((a, b) => b / a);
-  it('Teste de função', done => {
+  it('Teste de função', (done) => {
     expect(caller(some, 1, 2)).toBe(3);
     expect(caller(div, 1, 2)).toBe(2);
     done();
