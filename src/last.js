@@ -9,6 +9,4 @@ function last(param) {
   return lastParam[lastParam.length - 1] || lastParam;
 }
 
-console.log(last)
-
 module.exports = last;
