@@ -5,10 +5,10 @@ const greeting = require('../src/greeting');
 // A mensagem do erro deve ser 'You must send something to greet!'
 
 describe('#greeting', () => {
-    it('returns Hello ${param}', () => {
-        expect(greeting('Trybers')).toBe('Hello Trybers!');
+  it('returns Hello (inputted parameter)', () => {
+      expect(greeting('Trybers')).toBe('Hello Trybers!');
     });
-    it('returns error message when no parameters have been passed', () => {
-        expect(greeting).toThrow('You must send something to greet!');
+  it('returns error message when no parameters have been passed', () => {
+      expect(greeting).toThrow('You must send something to greet!');
     });
 });

@@ -5,10 +5,10 @@
 
 function duplicate(...params) {
   const duplFinder = new Set(params);
-  if ([...duplFinder].length == params.length) {
+  if ([...duplFinder].length === params.length) {
     return false;
   }
-  return true
+  return true;
 }
 
 module.exports = duplicate;
