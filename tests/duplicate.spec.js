@@ -13,5 +13,10 @@ describe('#duplicate', () => {
     expect(duplicate(1, 2, 3, 2)).toBeTruthy();
   });
 
-  it('')
+  it('duplicated string', () => {
+    expect(duplicate('lucas', 'mateus', 'lucas', 'jorge')).toBeTruthy();
+  })
+  it('not duplicated string', () => {
+    expect(duplicate('lucas','coruja','conrado')).toBeFalsy();
+  })
 });

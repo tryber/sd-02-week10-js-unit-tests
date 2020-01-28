@@ -3,23 +3,22 @@
   e retorna `true` se existe algum elemento duplicado e `false` caso contrário
  */
 
-function duplicate(arr) {
-  const ajeitado = arr.sort();
-  for (let i = 0; i < ajeitado.length; i++) {
-    if (ajeitado[i] == ajeitado[i + 1]) {
-      return true;
-    } else if (i == ajeitado.length - 1) {
-      return false
-      
-    }
-
-    }
-  }
-
+function duplicate(...params) {
+  return params.some((element, index) => params.indexOf(element) !== index);
+}
 
 module.exports = duplicate;
 
-console.log(duplicate([1, 4, 5, 2, 8, 8]))
+/* Another solution
 
-// function duplicate(...params) {
-//   return params.some((elem, pos) => params.indexOf(elem) !== pos); 
+function duplicate(...params) {
+const sorted = params.sort();
+for (let i = 0; i < sorted.length; i++) {
+  if (sorted[i] == sorted[i + 1]) {
+    return true;
+  } else if (i == sorted.length - 1) {
+    return false
+  }
+ }
+}
+*/
