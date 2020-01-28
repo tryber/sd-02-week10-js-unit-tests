@@ -6,7 +6,7 @@
 function average(...params) {
   const isNumber = !params.some(el => !(typeof el === 'number'));
   if (isNumber && (params.length !== 0)) {
-    return (params.reduce((total, value) => total + value, 0) /params.length);
+    return (params.reduce((total, value) => total + value, 0) / params.length);
   }
   return undefined;
 }
