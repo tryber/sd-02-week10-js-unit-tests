@@ -18,4 +18,4 @@ describe('testando função last', () => {
   it('quando a função recebe vários parâmetros, deve retornar o último', () => {
     expect(last(1, 2, 3, [2, 1], 5)).toEqual(5);
   });
-})
+});
