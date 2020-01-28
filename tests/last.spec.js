@@ -4,7 +4,7 @@ describe('#lastSpec', () => {
   it('return last element', () => {
     expect(last([1, 2, 4, 8])).toBe(8);
     expect(last('lucas')).toBe('s');
-    expect(last((1, 'b', 130, [], 17))).toBe(17);
+    expect(last((1, 'b', 130, [], 17, 'lucas'))).toBe('lucas');
   })
 })
 

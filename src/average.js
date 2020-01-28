@@ -5,11 +5,8 @@
 */
 
 function average(...params) {
-  const total = params.reduce((acc, cur) => acc + cur)
-  const media = total / params.length
-  console.log(media)
+  if (params.every(e => typeof e == typeof 3)) {
+    return params.reduce((acc, cur) => acc + cur) / params.length
+  } return undefined
 }
-
-average(9, 1, 5)
-
 module.exports = average;
