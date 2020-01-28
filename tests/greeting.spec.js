@@ -6,9 +6,9 @@ const greeting = require('../src/greeting');
 
 describe('#greeting', () => {
   it('returns Hello (inputted parameter)', () => {
-      expect(greeting('Trybers')).toBe('Hello Trybers!');
-    });
+    expect(greeting('Trybers')).toBe('Hello Trybers!');
+  });
   it('returns error message when no parameters have been passed', () => {
-      expect(greeting).toThrow('You must send something to greet!');
-    });
+    expect(greeting).toThrow('You must send something to greet!');
+  });
 });

@@ -8,12 +8,12 @@ const last = require('../src/last');
 
 describe('#last', () => {
   it('returns last element of array', () => {
-      expect(last([1, 2, 3, 4, 5])).toBe(5);
-    });
+    expect(last([1, 2, 3, 4, 5])).toBe(5);
+  });
   it('returns last character of a string', () => {
-      expect(last('something')).toBe('g');
-    });
+    expect(last('something')).toBe('g');
+  });
   it('returns the last of many parameters', () => {
-      expect(last('a', 'b', 'c')).toBe('c');
-    });
+    expect(last('a', 'b', 'c')).toBe('c');
+  });
 });
