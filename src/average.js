@@ -5,6 +5,9 @@
 */
 
 function average(...params) {
+  if (params.some(Element => typeof (Element) !== 'number')) {
+    return undefined;
+  }
   const media = (params.reduce((cur, acc) => {
     cur += acc;
     return cur;
