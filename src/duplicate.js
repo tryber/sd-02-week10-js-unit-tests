@@ -11,7 +11,7 @@ function duplicate(...params) {
       itemEqual = params[i];
     }
   }
-  return itemEqual != undefined ? true : false;
+  if (itemEqual !== undefined) return true;
 }
 
 module.exports = duplicate;
