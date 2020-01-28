@@ -11,7 +11,7 @@ function duplicate(...params) {
       itemEqual = params[i];
     }
   }
-  if (itemEqual !== undefined) return true;
+  if (itemEqual) return true;
   return false;
 }
 
