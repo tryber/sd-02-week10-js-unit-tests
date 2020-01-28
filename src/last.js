@@ -9,4 +9,9 @@ function last(param) {
   return lastParam[lastParam.length - 1] || lastParam;
 }
 
+// function last(list) {
+//   // add your implementation here
+//   return list
+// }
+
 module.exports = last;
