@@ -12,4 +12,13 @@ describe('#duplicate', () => {
   it('the params 1, 2, 3, 2 are duplicated', () => {
     expect(duplicate(1, 2, 3, 2)).toBeTruthy();
   });
+
+  test('testing if string could be used and testing positive', () => {
+    expect(duplicate('cat', 'dog', 'lion', 'wolf', 'dog')).toBeTruthy();
+  });
+
+  test('testing if string could be used and testing negative', () => {
+    expect(duplicate('cat', 'lion', 'wolf', 'dog')).toBeFalsy();
+  });
+
 });
