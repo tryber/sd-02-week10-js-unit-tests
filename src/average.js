@@ -5,9 +5,7 @@
 */
 
 function average(...params) {
-  return (params.reduce((curr, acc) => {
-    return (curr += acc);
-  }, 0) / params.length);
+  return (params.reduce((curr, acc) => (curr = curr + acc), 0) / params.length);
 }
 
 module.exports = average;
