@@ -2,7 +2,7 @@
   A função primeFactors recebe um número inteiro ${number}
   e retorna uma lista com todos os fatores desse parâmetro
 */
-function noRest(number,arr,i){
+function noRest(number, arr, i) {
   if (number % i === 0) arr.push(i);
 }
 function primeFactors(number) {
