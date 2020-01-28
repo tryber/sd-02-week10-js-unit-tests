@@ -20,5 +20,4 @@ describe('#duplicate', () => {
   test('testing if string could be used and testing negative', () => {
     expect(duplicate('cat', 'lion', 'wolf', 'dog')).toBeFalsy();
   });
-
 });
