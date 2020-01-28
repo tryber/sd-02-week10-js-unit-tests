@@ -16,5 +16,5 @@ describe('#duplicate', () => {
   it('the params are strings', () => {
     expect(duplicate('gato', 'cachorro', 'papagaio', 'cachorro')).toBeTruthy();
     expect(duplicate('gato', 'cachorro', 'papagaio')).toBeFalsy();
-  })
+  });
 });
