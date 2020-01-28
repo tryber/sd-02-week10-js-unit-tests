@@ -6,11 +6,11 @@ describe('série de testes para last.js', () => {
   }
   )
   it('segundo teste: string', () => {
-    expect(last('cachorro')).toBe('o')
+    expect(last('canguru')).toBe('u')
   }
   )
   it('terceiro e último teste: vários parâmetros', () => {
-    expect(last(1, 2, 'vassoura', harryPotter = 0)).toBe(0)
+    expect(last(1, 2, 'vassoura', harryPotter = 0, 'bode')).toBe('bode')
   })
 });
 
