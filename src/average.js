@@ -6,7 +6,8 @@
 
 function average(...params) {
   const media = (params.reduce((cur, acc) => {
-    return cur += acc;
+    cur += acc;
+    return cur;
   }, 0) / params.length);
   return media;
 }
