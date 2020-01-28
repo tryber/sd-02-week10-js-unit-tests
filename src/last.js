@@ -6,7 +6,8 @@ A função last deve retornar o último elemento contido no parâmetro ${param}
 
 function last(param) {
   const lastParam = arguments[arguments.length - 1];
-  return lastParam[lastParam.length - 1] || lastParam;
+  if (arguments.length !== 1) return lastParam;
+  return lastParam[lastParam.length - 1];
 }
 
 module.exports = last;

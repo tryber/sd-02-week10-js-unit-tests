@@ -12,5 +12,6 @@ describe('#last', () => {
     expect(last('a', 3, 'c', 10, 'e')).toBe('e');
     expect(last([0, 1, 2, 5, 7, 9, 'a', 15])).toBe(15);
     expect(last('Abacate é verde')).toBe('e');
+    expect(last('Abacate','é', 'verde')).toBe('verde');
   });
 });
