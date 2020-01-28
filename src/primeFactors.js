@@ -4,8 +4,8 @@
 */
 
 function primeFactors(number) {
+  const arr = [];
   if (Number.isInteger(number)) {
-    const arr = [];
     for (let i = 0; i <= number; i += 1) {
       if (number % i === 0) {
         arr.push(i);
