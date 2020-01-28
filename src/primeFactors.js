@@ -10,6 +10,6 @@ function primeFactors(number) {
     if (number % i === 0) resposta.push(i);
   }
   return resposta;
-};
+}
 
 module.exports = primeFactors;
