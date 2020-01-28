@@ -3,7 +3,8 @@
   e retorna a média dos valores recebidos
   Caso a função receba algum valor não número, o valor undefined deve ser retornado
 */
-const numbers = require('./numbers')
+const numbers = require('./numbers');
+
 function average(...params) {
   if (!numbers(...params)) {
     return undefined;
