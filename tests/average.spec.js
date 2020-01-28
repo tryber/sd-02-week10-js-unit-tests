@@ -15,9 +15,9 @@ describe('#average', () => {
 
   test('A função deve retornar a média dos números que receber', () => {
     expect(average(1, 1, 1, 1, 1)).toBe(1);
-  })
+  });
 
   test('Caso a função receba algum valor não número, o valor undefined deve ser retornado', () => {
-    expect(average(1, 2,'oi')).toBe(undefined);
+    expect(average(1, 2, 'oi')).toBe(undefined);
   });
 });
