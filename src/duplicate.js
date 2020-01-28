@@ -4,9 +4,7 @@
  */
 
 function duplicate(...params) {
-  const findDuplicates = params.filter((elem, pos, arr) => arr.indexOf(elem) !== pos);
-  if (findDuplicates.length === 0) return false;
-  return true;
+  return params.some((elem, pos) => params.indexOf(elem) !== pos);
 }
 
 module.exports = duplicate;
