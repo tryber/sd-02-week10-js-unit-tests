@@ -6,10 +6,10 @@
 function duplicate(...params) {
   const obj = {};
   params.forEach((elemento) => {
-    obj[elemento] = elemento
-  })
-  if (Object.keys(obj).length !== params.length) return true
-  return false
+    obj[elemento] = elemento;
+  });
+  if (Object.keys(obj).length !== params.length) return true;
+  return false;
 }
 
 module.exports = duplicate;

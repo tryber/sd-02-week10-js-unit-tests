@@ -24,5 +24,5 @@ describe('#duplicate', () => {
   test('A função retornar true se existirem valores duplicados e false caso contrário', () => {
     expect(duplicate(1, 2, 1, 3)).toBeTruthy();
     expect(duplicate(1, 2, 3)).toBeFalsy();
-  })
+  });
 });
