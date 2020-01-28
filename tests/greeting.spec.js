@@ -8,7 +8,7 @@ describe('testing function greeting', () => {
   test('no parameter passed', () => {
     expect(greeting).toThrowError(new Error('You must send something to greet!'));
   });
-  
+
   test('parameter Johnatas passed', () => {
     expect(greeting('Johnatas')).toBe('Hello Johnatas!');
   });
