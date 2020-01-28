@@ -6,10 +6,10 @@ const greeting = require('../src/greeting');
 
 describe('#greeting', () => {
   it('Return Hello param in sucess', () => {
-      expect(greeting('Abacate')).toBe('Hello Abacate!');
-      expect(greeting('Abacaxi')).toBe('Hello Abacaxi!');
-      expect(greeting).toThrowError();
-      expect(greeting).toThrowError('You must send something to greet!');
-      expect(greeting).toThrowError(new Error('You must send something to greet!'));
+    expect(greeting('Abacate')).toBe('Hello Abacate!');
+    expect(greeting('Abacaxi')).toBe('Hello Abacaxi!');
+    expect(greeting).toThrowError();
+    expect(greeting).toThrowError('You must send something to greet!');
+    expect(greeting).toThrowError(new Error('You must send something to greet!'));
   });
 });
