@@ -5,9 +5,9 @@
 */
 
 function average(...params) {
-  if (params.some(Element => typeof (Element) !== 'number')) return undefined
-  const total = params.reduce((acc, elem) => acc + elem, 0)
-  return total / params.length
+  if (params.some(Element => typeof (Element) !== 'number')) return undefined;
+  const total = params.reduce((acc, elem) => acc + elem, 0);
+  return total / params.length;
 }
 
 module.exports = average;
