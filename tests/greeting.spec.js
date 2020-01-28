@@ -7,5 +7,5 @@ test('Se nenhum parâmetro for passado um erro deve ser lançado', () => {
   expect(greeting).toThrow();
 });
 test("A mensagem do erro deve ser 'You must send something to greet!'", () => {
-  expect(greeting).toThrowError(/^You must send something to greet!$/)
+  expect(greeting).toThrowError(/^You must send something to greet!$/);
 });
