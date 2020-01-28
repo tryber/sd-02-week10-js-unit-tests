@@ -7,9 +7,8 @@ const last = require('../src/last');
 // Se a função receber vários parâmetros, deve retornar o último parâmetro
 
 test('Verifica último parametro', () => {
-    expect(5).toBe(last(1, 2, 3, 4, 5));
-    expect('mouse').toBe(last(['teclado', 'monitor', 'gabinete', 'placa mãe', 'mouse']));
-    expect('e').toBe(last('Trybe'));
-    expect(32).toBe(last(10, 13, 'Ronaldinho Gaúcho', 25, 32));
-
+  expect(5).toBe(last(1, 2, 3, 4, 5));
+  expect('mouse').toBe(last(['teclado', 'monitor', 'gabinete', 'placa mãe', 'mouse']));
+  expect('e').toBe(last('Trybe'));
+  expect(32).toBe(last(10, 13, 'Ronaldinho Gaúcho', 25, 32));
 });
