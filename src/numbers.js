@@ -4,10 +4,7 @@
 */
 
 function numbers(...params) {
-  if (params.every(Element => typeof (Element) === 'number')) {
-    return true;
-  }
-  return false;
+ return params.every(Element => typeof (Element) === 'number');
 }
 
 module.exports = numbers;
