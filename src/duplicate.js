@@ -5,6 +5,7 @@
 
 function duplicate(...params) {
   return params.some((element, index, array) => index !== array.indexOf(element));
+  // return !(params.length === new Set(params).size); // solução do Julio
 }
 
 module.exports = duplicate;
