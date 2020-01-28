@@ -8,11 +8,11 @@ const caller = require('../src/caller');
 
 const mockCallback = jest.fn((a, b) => a + b);
 
-describe('testing caller function', () => { 
-  afterEach(() => {    
+describe('testing caller function', () => {
+  afterEach(() => {
     jest.clearAllMocks();
-  }); 
-  
+  });
+
   test('is a function', () => {
     expect(typeof mockCallback).toBe('function');
   });
