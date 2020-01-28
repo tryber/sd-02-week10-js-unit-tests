@@ -12,4 +12,8 @@ describe('#duplicate', () => {
   it('the params 1, 2, 3, 2 are duplicated', () => {
     expect(duplicate(1, 2, 3, 2)).toBeTruthy();
   });
+
+  it('our function can receive strings too', () => {
+    expect(duplicate('cachorro', 'papagaio', 'gato', 'gato', 2, 3)).toBeTruthy();
+  })
 });
