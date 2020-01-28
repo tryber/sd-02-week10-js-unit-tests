@@ -7,10 +7,10 @@ const numbers = require('../src/numbers');
 
 function average(...params) {
   if (numbers(...params)) {
-    let somaReduce = params.reduce(((acum, atual) => acum + atual), 0);
-    return somaReduce / params.length
+    const somaReduce = params.reduce(((acum, atual) => acum + atual), 0);
+    return somaReduce / params.length;
   }
-  return undefined
+  return undefined;
 }
 
 module.exports = average;
