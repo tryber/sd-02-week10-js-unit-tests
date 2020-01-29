@@ -5,18 +5,18 @@
 
 function primeFactors(number) {
   if (Number.isInteger(number)) {
-    let lista = [];
+    const lista = [];
     let numAtual = number;
     for (i = 2; i <= numAtual; i += 1) {
-      if (numAtual % i == 0) {
+      if (numAtual % i === 0) {
         lista.push(i);
-        numAtual = numAtual / i;
+        numAtual /= i;
         i -= 1;
       }
     }
-    return lista;
+    return lista;  
   }
-  return (`${number} is not a number`);
+  return `${number} is not a integer number`;
 }
 
 module.exports = primeFactors;
