@@ -3,7 +3,7 @@
   e retorna uma lista com todos os fatores desse parâmetro
 */
 
-const integerNumber = num => {
+const integerNumber = (num) => {
   const lista = [];
   let numAtual = num;
   for (i = 2; i <= numAtual; i += 1) {
@@ -14,7 +14,7 @@ const integerNumber = num => {
     }
   }
   return lista;
-}
+};
 
 function primeFactors(number) {
   if (Number.isInteger(number)) {
