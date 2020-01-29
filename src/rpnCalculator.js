@@ -33,21 +33,33 @@ function verificaItem(expression) {
   return !expression.every(item => !isNaN(item) || verificaOperador(item));
 }
 
+function verificaOperadoresMultDiv(item) {
+  return item === '*' || item === '/';
+}
+
+function verificaOperadoresAddSub(item) {
+  return item === '+' || item === '-';
+}
+
+function whileOperadoresMultDiv(expression) {
+  while (expression.some(item => verificaOperadoresMultDiv(item))) {
+    const index = expression.findIndex(item => verificaOperadoresMultDiv(item));
+    expression = operacoes(expression, index);
+  }
+  return expression;
+}
+
 function rpnCalculator(expression) {
   expression = expression.split(' ');
   if (verificaItem(expression)) {
     throw new Error('Operador inválido!');
   }
   while (expression.length > 1) {
-    while (expression.some(item => item === '*' || item === '/')) {
-      const index = expression.findIndex(item => item === '*' || item === '/');
-      expression = operacoes(expression, index);
-    }
-    const index = expression.findIndex(item => item === '+' || item === '-');
+    expression = whileOperadoresMultDiv(expression);
+    const index = expression.findIndex(item => verificaOperadoresAddSub(item));
     expression = operacoes(expression, index);
   }
   return expression[0];
 }
-
 
 module.exports = rpnCalculator;

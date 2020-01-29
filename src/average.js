@@ -9,12 +9,8 @@ function average(params) {
     return undefined;
   }
   const array = [...arguments];
-  array = array.reduce((acc, value) => {
-    return acc + value;
-  }, 0) / array.length;
-  return array;
-}
+  return array.reduce((acc, value) => acc + value, 0) / array.length;
 
-console.log(average());
+}
 
 module.exports = average;

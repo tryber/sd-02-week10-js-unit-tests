@@ -13,5 +13,5 @@ describe('#primeFactors', () => {
     } catch (e) {
       expect(e.message).toBe('should be a number');
     }
-  })
+  });
 });
