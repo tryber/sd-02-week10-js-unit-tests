@@ -12,7 +12,7 @@
 */
 
 function caller(fn, a, b) {
-  return fn(a, b);
+  setTimeout( () => {fn(a, b)}, 3000);
 }
 
 module.exports = caller;

@@ -10,7 +10,7 @@ describe('série de testes para last.js', () => {
   }
   )
   it('terceiro e último teste: vários parâmetros', () => {
-    expect(last(1, 2, 'vassoura', harryPotter = 0, 'bode')).toBe('bode')
+    expect(last(1, 2, 'vassoura', 'bode')).toBe('bode')
   })
 });
 
