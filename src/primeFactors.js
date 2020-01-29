@@ -19,6 +19,7 @@
 */
 
 function primeFactors(number) {
+  if (!Number.isInteger(number)) throw new Error('Valor não inteiro.');
   const primos = [];
   for (let i = 2; i <= number;) {
     if ((number % i) === 0) {
