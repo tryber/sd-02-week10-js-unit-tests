@@ -3,18 +3,22 @@
   e retorna uma lista com todos os fatores desse parâmetro
 */
 
+const integerNumber = num => {
+  const lista = [];
+  let numAtual = num;
+  for (i = 2; i <= numAtual; i += 1) {
+    if (numAtual % i === 0) {
+      lista.push(i);
+      numAtual /= i;
+      i -= 1;
+    }
+  }
+  return lista;
+}
+
 function primeFactors(number) {
   if (Number.isInteger(number)) {
-    const lista = [];
-    let numAtual = number;
-    for (i = 2; i <= numAtual; i += 1) {
-      if (numAtual % i === 0) {
-        lista.push(i);
-        numAtual /= i;
-        i -= 1;
-      }
-    }
-    return lista;  
+    return integerNumber(number);
   }
   return `${number} is not a integer number`;
 }

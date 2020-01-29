@@ -13,6 +13,6 @@ describe('#primeFactors', () => {
     expect(primeFactors(112)).toEqual([2, 2, 2, 2, 7]);
   });
   it('expect error message if dont send number param', () => {
-    expect(primeFactors(3.12)).toEqual('3.12 is not a integer number');
+    expect(primeFactors(3.12)).toBe('3.12 is not a integer number');
   });
 });
