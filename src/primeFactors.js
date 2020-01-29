@@ -5,17 +5,15 @@
 
 function primeFactors(number) {
   let arrayFactor = [];
-  if (Number.isInteger(number)) {
-    for (let i = 1; i <= number; i += 1) {
-      if (number % i === 0) {
-        arrayFactor.push(i);
-      }
+  for (let i = 1; i <= number; i += 1) {
+    if (number % i === 0) {
+      arrayFactor.push(i);
     }
-    return arrayFactor;
   }
+  if (Number.isInteger(number)) return arrayFactor;
   return false;
 }
 
-/* console.log(primeFactors(27)) */
+console.log(primeFactors(30))
 
 module.exports = primeFactors;
