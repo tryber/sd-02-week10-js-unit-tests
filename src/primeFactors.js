@@ -27,13 +27,12 @@ function isPrime(numero) {
 }
 function encontrarFatores(number, fatoresPrimos) {
   let p = number;
-  const resposta = []
+  const resposta = [];
   while (p > 1) {
     if (p % fatoresPrimos[fatoresPrimos.length - 1] === 0) {
-      p = p / fatoresPrimos[fatoresPrimos.length - 1];
+      p /= fatoresPrimos[fatoresPrimos.length - 1];
       resposta.push(fatoresPrimos[fatoresPrimos.length - 1]);
-    }
-    else {
+    } else {
       fatoresPrimos.pop();
     }
   }
