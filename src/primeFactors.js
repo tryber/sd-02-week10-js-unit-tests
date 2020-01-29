@@ -31,6 +31,5 @@ function primeFactors(number) {
   }
   return primes;
 }
-console.log(primeFactors(0))
 
 module.exports = primeFactors;

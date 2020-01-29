@@ -6,8 +6,8 @@ const assert = require('assert');
 
 describe('testando a função primeFactors', () => {
   it('testando se ela retorna os fatores primos corretamente', () => {
-    assert.deepEqual(primeFactors(100), [2, 5]);
-    assert.deepEqual(primeFactors(54), [2, 3]);
+    assert.deepEqual(primeFactors(100), [2, 2, 5, 5]);
+    assert.deepEqual(primeFactors(54), [2, 3, 3, 3]);
     assert.deepEqual(primeFactors(55), [5, 11]);
     assert.deepEqual(primeFactors(543), [3, 181]);
   });
