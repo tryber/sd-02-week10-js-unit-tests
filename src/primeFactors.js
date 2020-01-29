@@ -4,7 +4,7 @@
 */
 
 function primeFactors(number) {
-  let arrayFactor = [];
+  const arrayFactor = [];
   for (let i = 1; i <= number; i += 1) {
     if (number % i === 0) {
       arrayFactor.push(i);
