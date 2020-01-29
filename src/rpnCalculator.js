@@ -29,9 +29,13 @@ function verificaOperador(operador) {
   return operadores.some(item => item === operador);
 }
 
+function verificaItem(expression) {
+  return !expression.every(item => !isNaN(item) || verificaOperador(item));
+}
+
 function rpnCalculator(expression) {
   expression = expression.split(' ');
-  if (!expression.every(item => !isNaN(item) || verificaOperador(item))) {
+  if (verificaItem(expression)) {
     throw new Error('Operador inválido!');
   }
   while (expression.length > 1) {

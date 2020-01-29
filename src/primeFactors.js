@@ -8,7 +8,7 @@ function primeFactors(number) {
     throw new Error('should be a number');
   }
   const array = [];
-  for (let i = 2; i < number; i++) {
+  for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
       array.push(i);
     }

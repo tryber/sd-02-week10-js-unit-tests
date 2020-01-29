@@ -16,7 +16,7 @@ describe('#rpnCalculator', () => {
     try {
       rpnCalculator('5 * 2 - 10 > 2');
     } catch (e) {
-      expect(e.message).toBe('Operador inválido!')
+      expect(e.message).toBe('Operador inválido!');
     }
   });
 });
