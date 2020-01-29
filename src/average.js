@@ -5,7 +5,9 @@
 */
 
 function average(...params) {
-  return params.reduce((acumulado, item) => acumulado + item, 0) / params.length  
+  if (params.every(item => typeof item === 'number')) {
+    return params.reduce((acumulado, item) => acumulado + item, 0) / params.length  
+  }
 }
 
 module.exports = average;
