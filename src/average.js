@@ -5,13 +5,14 @@
 */
 
 function average(params) {
-  if (typeof(params) === 'undefined') {
+  if (typeof params === 'undefined') {
     return undefined;
   }
   const array = [...arguments];
-  return array.reduce((acc, value) => {
+  array.reduce((acc, value) => {
     return acc + value;
   }, 0) / array.length;
+  return array;
 }
 
 console.log(average());

@@ -17,7 +17,7 @@ describe('#greetins', () => {
     try {
       greeting();
     } catch (e) {
-      expect(e.message).toBe('You must send something to greet!')
+      expect(e.message).toBe('You must send something to greet!');
     }
   });
 });

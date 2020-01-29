@@ -12,7 +12,7 @@ describe('#average', () => {
   it('should receive an varivel size of parameters', () => {
     const paramsN = Math.floor(Math.random() * 1000) + 1;
     const paramsValue = [];
-    for (let i = 0; i < paramsN; i++) {
+    for (let i = 0; i < paramsN; i += 1) {
       paramsValue.push(Math.floor(Math.random() * 20) + 1);
     }
     expect(typeof average(...paramsValue)).toBe('number');

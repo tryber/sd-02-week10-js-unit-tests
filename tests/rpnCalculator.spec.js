@@ -18,5 +18,5 @@ describe('#rpnCalculator', () => {
     } catch (e) {
       expect(e.message).toBe('Operador inválido!')
     }
-  })
+  });
 });
