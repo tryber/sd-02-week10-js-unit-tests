@@ -25,14 +25,28 @@ function isPrime(numero) {
   }
   return ePrimo;
 }
-function primeFactors(number) {
-  if (!Number.isInteger(number)) throw new Error('You must send an integer number!');
-  const resposta = [];
-  for (let i = 1; i <= number; i += 1) {
-    if (number % i === 0 && isPrime(i)) resposta.push(i);
+function encontrarFatores(number, fatoresPrimos) {
+  let p = number;
+  const resposta = []
+  while (p > 1) {
+    if (p % fatoresPrimos[fatoresPrimos.length - 1] === 0) {
+      p = p / fatoresPrimos[fatoresPrimos.length - 1];
+      resposta.push(fatoresPrimos[fatoresPrimos.length - 1]);
+    }
+    else {
+      fatoresPrimos.pop();
+    }
   }
-  return resposta;
+  return resposta.sort((a, b) => a - b);
 }
 
+function primeFactors(number) {
+  if (!Number.isInteger(number)) throw new Error('You must send an integer number!');
+  const nPrimos = [];
+  for (let i = 1; i <= number; i += 1) {
+    if (number % i === 0 && isPrime(i)) nPrimos.push(i);
+  }
+  return encontrarFatores(number, nPrimos);
+}
 
 module.exports = primeFactors;
