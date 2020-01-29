@@ -16,3 +16,6 @@ function duplicate(...params) {
 }
 
 module.exports = duplicate;
+
+
+console.log(duplicate())
