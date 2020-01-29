@@ -15,7 +15,7 @@ describe('#duplicate', () => {
 
   it('duplicated string', () => {
     expect(duplicate('lucas', 'mateus', 'lucas', 'jorge')).toBeTruthy();
-  })
+  });
   it('not duplicated string', () => {
     expect(duplicate('lucas', 'coruja', 'conrado')).toBeFalsy();
   });

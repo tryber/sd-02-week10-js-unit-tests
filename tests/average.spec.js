@@ -10,7 +10,7 @@ describe('#average', () => {
   });
   it('expect average of 10, 9, 11 should be 10', () => {
     expect(average(10, 9, 11)).toBe(10);
-  })
+  });
   it('not a number return undefined', () => {
     expect(average('lucas')).toBeUndefined();
   });

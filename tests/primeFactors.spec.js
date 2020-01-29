@@ -1,6 +1,9 @@
 const primeFactors = require('../src/primeFactors');
 const assert = require('assert');
 
+// A função recebe um inteiro e retorna a lista com os fatores desse número
+// Se o parâmetro recebido for um valor não inteiro um erro deve ser lançado
+
 describe('#primefactors', () => {
   it('integer return factors', () => {
     assert.deepStrictEqual(primeFactors(8), [2, 2, 2]);
@@ -11,6 +14,3 @@ describe('#primefactors', () => {
     assert.throws(() => primeFactors(0), /You must pass an integer/);
   });
 });
-
-// A função recebe um inteiro e retorna a lista com os fatores desse número
-// Se o parâmetro recebido for um valor não inteiro um erro deve ser lançado

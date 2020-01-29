@@ -10,7 +10,7 @@ describe('#caller', () => {
     expect(soma).toBeCalledWith(4, 2);
     expect(soma).toHaveBeenCalledTimes(2);
     done();
-  })
+  });
   it('concat strings', (done) => {
     expect(caller(soma, 'lucas', 'werner')).toBe('lucaswerner');
     expect(soma).toHaveBeenCalledTimes(1);

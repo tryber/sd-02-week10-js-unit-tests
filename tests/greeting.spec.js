@@ -5,7 +5,7 @@ describe('#greeting', () => {
     expect(greeting('Lucas')).toEqual('Hello Lucas!');
     expect(() => {
       greeting();
-    }).toThrow(Error('You must send something to greet!'))
+    }).toThrow(Error('You must send something to greet!'));
   });
 });
 
