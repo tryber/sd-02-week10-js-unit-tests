@@ -5,7 +5,7 @@
 
 function primeFactors(number) {
   if (!number || !Number.isInteger(number) || typeof number !== 'number') {
-    throw new Error ('passe um número inteiro como parâmetro');
+    throw new Error('passe um número inteiro como parâmetro');
   }
   const primes = [];
   for (let i = 2; i <= number; i += 1) {
@@ -15,6 +15,6 @@ function primeFactors(number) {
     }
   }
   return primes.filter((element, i, arr) => i === arr.indexOf(element));
-};
+}
 
 module.exports = primeFactors;
