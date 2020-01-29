@@ -8,7 +8,7 @@ function duplicate(...params) {
   params.forEach((elemento) => {
     obj[elemento] = elemento;
   });
-  if (Object.keys(obj).length !== params.length) return true;
+  if ((Object.keys(obj).length !== params.length) && (params.length !== 1)) return true;
   return false;
 }
 
