@@ -5,8 +5,8 @@
 */
 
 function average(...params) {
-  if (params.every(e => typeof e == typeof 3)) {
-    return params.reduce((acc, cur) => acc + cur) / params.length
-  } return undefined
+  if (params.every(e => typeof e === typeof 3)) {
+    return params.reduce((acc, cur) => acc + cur) / params.length;
+  } return undefined;
 }
 module.exports = average;

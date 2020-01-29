@@ -12,7 +12,7 @@
 */
 
 function caller(fn, a, b) {
-  return fn(a,b)
+  return fn(a, b);
 }
 
 module.exports = caller;

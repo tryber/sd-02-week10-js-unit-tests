@@ -13,5 +13,5 @@ describe('#average', () => {
   })
   it('not a number return undefined', () => {
     expect(average('lucas')).toBeUndefined();
-  })
+  });
 });

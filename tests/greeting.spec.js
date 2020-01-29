@@ -6,8 +6,8 @@ describe('#greeting', () => {
     expect(() => {
       greeting();
     }).toThrow(Error('You must send something to greet!'))
-  })
-})
+  });
+});
 
 // A função deve receber uma string ${param} e retornar a mensagem 'Hello ${param}!'
 // Se nenhum parâmetro for passado um erro deve ser lançado
