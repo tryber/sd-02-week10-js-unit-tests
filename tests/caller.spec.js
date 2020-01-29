@@ -9,11 +9,15 @@ const caller = require('../src/caller');
 describe('#caller', () => {
   const fn = jest.fn((a, b) => a + b);
 
-  it('receice 3 parameters', () => {
+  it('should return the result function', () => {
     expect(caller(fn, 2, 3)).toBe(5);
   });
 
-  it('first param should be a function', () => {
+  it('should return the result function', () => {
+    expect(caller(fn, 'coi', 'sa')).toBe('coisa');
+  });
 
+  it('first param should be a function', () => {
+    expect(typeof fn).toBe('function');
   });
 });
