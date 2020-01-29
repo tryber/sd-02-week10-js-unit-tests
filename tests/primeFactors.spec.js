@@ -3,12 +3,12 @@ const assert = require('assert');
 
 describe('#primefactors', () => {
   it('integer return factors', () => {
-    assert.deepStrictEqual(primeFactors(10), [2, 5]);
-    assert.deepStrictEqual(primeFactors(147), [2, 5, 13]);
-    assert.deepStrictEqual(primeFactors(0), [3, 5])
-  })
+    assert.deepStrictEqual(primeFactors(8), [2, 2, 2]);
+    assert.deepStrictEqual(primeFactors(147), [3, 7, 7]);
+      })
   it('not a integer', () => {
-    assert.throws(() => primeFactors(2.3), Error('You must pass a integer')
+    assert.throws(() => primeFactors(2.3), /You must pass an integer/);
+    assert.throws(() => primeFactors(0), /You must pass an integer/);
   })
   
 })
