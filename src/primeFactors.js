@@ -14,7 +14,8 @@ function primeFactors(number) {
       number /= i;
     }
   }
-  return primes.filter((element, i, arr) => i === arr.indexOf(element));
+  return primes;
 }
+console.log(primeFactors(0))
 
 module.exports = primeFactors;
