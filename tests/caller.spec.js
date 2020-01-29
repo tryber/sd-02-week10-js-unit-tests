@@ -11,5 +11,5 @@ test('A função mock foi chamada', () => {
 });
 
 test('Conferindo parâmetros passados', () => {
-  expect(funcaoMocada).toHaveBeenLastCalledWith(3, 4)
+  expect(funcaoMocada).toHaveBeenLastCalledWith(3, 4);
 });
