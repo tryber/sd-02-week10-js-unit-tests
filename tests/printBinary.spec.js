@@ -15,10 +15,10 @@ describe('#printBinary', () => {
   });
 
   it('should print binary numbers until 3', () => {
-    expect(printBinary(3)).toStrictEqual([ '000', '001', '010', '011', '100', '101', '110', '111' ]);
+    expect(printBinary(3)).toStrictEqual(['000', '001', '010', '011', '100', '101', '110', '111']);
   });
 
-  it('Retornar array vazio', () =>{
+  it('Retornar array vazio', () => {
     expect(printBinary(0)).toStrictEqual([]);
     expect(printBinary('trybe')).toStrictEqual([]);
   });
