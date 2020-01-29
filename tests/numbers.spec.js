@@ -5,6 +5,15 @@ const numbers = require('../src/numbers');
 // A função deve retornar o valor false se algum elemento não for do tipo Number
 
 describe('#numbers', () => {
+  it('should receive an varivel size of parameters', () => {
+    const paramsN = Math.floor(Math.random() * 1000) + 1;
+    const paramsValue = [];
+    for (let i = 0; i < paramsN; i += 1) {
+      paramsValue.push(Math.floor(Math.random() * 20) + 1);
+    }
+    expect(typeof numbers(...paramsValue)).toBeDefined();
+  });
+
   it('the params 1, 4, 3, 2, 5 are numbers', () => {
     expect(numbers(1, 4, 3, 2, 5)).toBeTruthy();
   });

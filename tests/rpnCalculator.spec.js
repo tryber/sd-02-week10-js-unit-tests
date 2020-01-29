@@ -6,3 +6,17 @@ const rpnCalculator = require('../src/rpnCalculator');
 // Qualquer outro operador deve lançar um erro
 
 // ps: utilize os exemplos da documentação (README.md) para contrinuir com os testes
+
+describe('#rpnCalculator', () => {
+  it('Given the expression 5 * 2 - 10 / 2 it should return 5', () => {
+    expect(rpnCalculator('5 * 2 - 10 / 2')).toBe(5);
+  });
+
+  it('given a invalid operator > should return a error', () => {
+    try {
+      rpnCalculator('5 * 2 - 10 > 2');
+    } catch (e) {
+      expect(e.message).toBe('Operador inválido!');
+    }
+  });
+});
