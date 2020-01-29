@@ -4,6 +4,16 @@
   Caso a função receba algum valor não número, o valor undefined deve ser retornado
 */
 
-function average(params) {}
+function average(params) {
+  if (typeof(params) === 'undefined') {
+    return undefined;
+  }
+  const array = [...arguments];
+  return array.reduce((acc, value) => {
+    return acc + value;
+  }, 0) / array.length;
+}
+
+console.log(average());
 
 module.exports = average;

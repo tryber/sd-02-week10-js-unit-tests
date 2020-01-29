@@ -6,8 +6,10 @@
 
 function last(param) {
   const lastParam = arguments[arguments.length - 1];
+  if (Array.from(arguments).every(item => typeof(item) === 'string' || Array.isArray(item))) {
+    return arguments[arguments.length - 1];
+  }
   return lastParam[lastParam.length - 1] || lastParam;
 }
-//coisa
 
 module.exports = last;
