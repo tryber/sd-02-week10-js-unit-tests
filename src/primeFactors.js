@@ -11,9 +11,7 @@ function primeFactors(number) {
     }
   }
   if (Number.isInteger(number)) return arrayFactor;
-  return false;
+  throw new Error('Não é um número inteiro ou não é un número');
 }
-
-console.log(primeFactors(30))
 
 module.exports = primeFactors;
