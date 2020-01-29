@@ -7,7 +7,7 @@ const caller = require('../src/caller');
 // e retornar o resultado
 
 describe('testando a função caller', () => {
-  it('testando se a função/parâmetro é chamada e os parâmetros são chamados', done => {
+  it('testando se a função/parâmetro é chamada e os parâmetros são chamados', (done) => {
     const fn = jest.fn(); // mock da função que é passada como parâmetro da caller
 
     caller(fn, 'a', 'b');
@@ -21,9 +21,10 @@ describe('testando a função caller', () => {
     done();
   });
 
-  it('testando a função caso ela tenha comportamento', () => {
+  it('testando a função caso ela tenha comportamento', (done) => {
     const fn = jest.fn((a, b) => a + b);
     expect(caller(fn, 5.5, 5.5)).toEqual(11);
     expect(caller(fn, 'xablau', 'batatinha')).toEqual('xablaubatatinha');
+    done();
   });
 });
