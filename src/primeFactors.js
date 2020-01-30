@@ -16,6 +16,8 @@
 */
 
 function primeFactors(number) {
+  if (!Number.isInteger(number))
+    throw new Error ('must be an integer');
   const arrayResposta = [];
   for (let i = 2; i <= number;) {
     if (number % i === 0) {
