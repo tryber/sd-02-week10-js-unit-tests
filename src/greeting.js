@@ -10,3 +10,4 @@ function greeting(param) {
 }
 
 module.exports = greeting;
+
