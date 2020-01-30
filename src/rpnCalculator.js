@@ -5,11 +5,11 @@
   referência: https://en.wikipedia.org/wiki/Reverse_Polish_notation
  */
 
-//CÓDIGO COMENTADO:
+// CÓDIGO COMENTADO:
 // function rpnCalculator(rpn) {
 //   const arr = [];
 //   rpn.split(' ').forEach(item => { //transforma em array de strings
-//     if (+item) { // vê se o valor é um número 
+//     if (+item) { // vê se o valor é um número
 //       arr.push(item); // joga o número no array arr
 //     } else { // quando não for número, ou seja, for um operador
 //       arr.push(this.eval(arr.splice(-2, 1)[0] + item + arr.pop()));
@@ -18,7 +18,7 @@
 //       // ex: "3 + 4"
 //       // 2) eval faz a conta de uma string em número:
 //       // ex: "3 + 4" = 3 + 4 = 7
-//       // 3) dá um push do número retornado no arr 
+//       // 3) dá um push do número retornado no arr
 //     }
 //   })
 //   return arr[0];
@@ -32,13 +32,13 @@
 
 function rpnCalculator(rpn) {
   const arr = [];
-  rpn.split(' ').forEach(item => {
+  rpn.split(' ').forEach((item) => {
     if (+item) {
       arr.push(item);
     } else {
       arr.push(this.eval(arr.splice(-2, 1)[0] + item + arr.pop()));
     }
-  })
+  });
   return arr[0];
 }
 
