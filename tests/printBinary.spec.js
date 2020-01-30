@@ -8,7 +8,8 @@ const printBinary = require('../src/printBinary');
 describe('#printBinary', () => {
   it('typeof', () => {
     expect(typeof printBinary).toBe('function');
-  })
+  });
+
   it('should print binary numbers until 1', (done) => {
     expect(printBinary(1)).toEqual(['0', '1']);
     done();
@@ -24,5 +25,5 @@ describe('#printBinary', () => {
     expect(printBinary()).toEqual([]);
     expect(printBinary('Abacate')).toEqual([]);
     done();
-  })
+  });
 });
