@@ -3,29 +3,15 @@
   e retorna uma lista com todos os fatores desse parâmetro
 */
 function numeroPrimo(num) {
-
-  if (typeof num !== "number") {
-      return false;
-  }
-
-  if (num == 2) {
-      return true;
-  }
-
-  if (num % 2 == 0) {
-      return false;
-  }
-
   if (num !== 1) {
-    for (let i = 2; i < num; i++) {
-      if (num % i == 0) {
+    for (let i = 2; i < num; i += 1) {
+      if (num % i === 0) {
         return false;
       }
     }
-    return true;
-  } else {
-      return false;
+      return true;
   }
+    return false;
 }
 
 const integerNumber = (num) => {
