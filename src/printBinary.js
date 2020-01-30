@@ -10,10 +10,10 @@ function printBinary(number) {
   const arrResp = [];
   for (let i = 0; i < maxValue; i += 1) {
     arrResp.push(i.toString(2));
-    if (arrResp[i].length < number){
+    if (arrResp[i].length < number) {
       arrResp[i] = '0'.repeat(number - arrResp[i].length) + arrResp[i];
+    }
   }
-}
   return arrResp;
 }
 module.exports = printBinary;
