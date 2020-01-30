@@ -8,5 +8,5 @@ const rpnCalculator = require('../src/rpnCalculator');
 // ps: utilize os exemplos da documentação (README.md) para contrinuir com os testes
 
 test('', () => {
-    expect(rpnCalculator);
-  });
+  expect(rpnCalculator);
+});
