@@ -32,11 +32,14 @@
 
 function rpnCalculator(rpn) {
   const arr = [];
+  if(!rpn) throw new Error('passe um parâmetro');
   rpn.split(' ').forEach((item) => {
     if (+item) {
       arr.push(item);
-    } else {
+    } else if (item === '+' || item === '-' || item === '*' || item === '/') {
       arr.push(this.eval(arr.splice(-2, 1)[0] + item + arr.pop()));
+    } else {
+      throw new Error('utilize um operador válido (+, -, * ou /)');
     }
   });
   return arr[0];
