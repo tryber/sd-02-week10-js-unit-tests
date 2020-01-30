@@ -5,12 +5,24 @@ const numbers = require('../src/numbers');
 // A função deve retornar o valor false se algum elemento não for do tipo Number
 
 describe('#numbers', () => {
+  it('no params is false', () => {
+    expect(numbers()).toBeFalsy();
+  });
+
+  it('the params 1 are numbers', () => {
+    expect(numbers(1)).toBeTruthy();
+  });
+
   it('the params 1, 4, 3, 2, 5 are numbers', () => {
     expect(numbers(1, 4, 3, 2, 5)).toBeTruthy();
   });
 
   it('the params 1, "a", 3 are not numbers', () => {
     expect(numbers(1, 'a', 3)).toBeFalsy();
+  });
+
+  it('the params "1" are not numbers', () => {
+    expect(numbers('1')).toBeFalsy();
   });
 
   it('the params 1 3, NaN are numbers', () => {

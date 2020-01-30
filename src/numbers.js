@@ -4,8 +4,11 @@
 */
 
 function numbers(...params) {
-  const isNumber = !params.some(el => !(typeof el === 'number'));
-  return isNumber;
+  if(params.length !== 0) {
+    const isNumber = !params.some(el => !(typeof el === 'number'));
+    return isNumber;
+  }
+  return false;
 }
 
 module.exports = numbers;
