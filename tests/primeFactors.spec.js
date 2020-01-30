@@ -1,15 +1,19 @@
 const primeFactors = require('../src/primeFactors');
 const assert = require('assert');
 
-describe('testes para a função primeFactors', () => {
-  it('função recebe um número e retorna a lista com os fatores primos', () => {
-    expect(primeFactors(40)).toEqual([2, 2, 2, 5]);
-  })
-  it('retorna um erro em caso de algo distinto de um número inteiro', () => {
-    expect(() => (primeFactors('batata')).toThrow(Error));
-  })
-}
-)
+const experado = primeFactors(40)
+
+let resultado = [2, 2, 2, 5]
+
+assert.deepStrictEqual(experado, resultado);
+
+resultado = 'Error: Valor não inteiro.';
+
+assert.throws(() => { 
+  primeFactors(3.15) 
+}, resultado);
+
+
 
 // A função recebe um inteiro e retorna a lista com os fatores primos desse número
 // Se o parâmetro recebido for um valor não inteiro um erro deve ser lançado

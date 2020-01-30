@@ -5,11 +5,11 @@
 */
 
 function average(...params) {
-  if (typeof arguments != 'number') {
-    return undefined
+  const verificaNumeros = params.every(numero => (typeof numero === 'number'));
+  if (verificaNumeros === true && params.length != 0) {
+    return (Array.from(arguments).reduce((a, b) => a += b, 0)) / params.length
   }
-  const somatorio = Array.from(arguments).reduce((a,b) => a+=b, 0)
-  return somatorio/params.length
+  return undefined
 }
 
 module.exports = average;
