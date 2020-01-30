@@ -18,6 +18,19 @@
     -> https://pt.wikipedia.org/wiki/Fator_primo
 */
 
-function primeFactors(number) {}
+function primeFactors(number) {
+  let num = number;
+  const arr = [];
+  if (!Number.isInteger(number)) throw Error('This number is not an integer!');
+  for (let i = 2; i <= num;) {
+    if (num % i === 0) {
+      arr.push(i);
+      num /= i;
+    } else {
+      i += 1;
+    }
+  }
+  return arr;
+}
 
 module.exports = primeFactors;
