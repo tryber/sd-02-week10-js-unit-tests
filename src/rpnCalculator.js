@@ -8,7 +8,7 @@
 function rpnCalculator(string) {
   const arr = [];
   string.split(' ').forEach((Element) => {
-    if (parseInt(Element) == +Element) {
+    if (parseInt(Element, 10) === +Element) {
       arr.push(Element);
     } else {
       arr.push(this.eval(arr.splice(-2, 1)[0] + Element + arr.pop()));
