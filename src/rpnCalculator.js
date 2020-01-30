@@ -7,15 +7,15 @@
 
 function rpnCalculator(string) {
   const arr = [];
-  string.split(' ').forEach(Element => {
-    if (Element == +Element) {
+  string.split(' ').forEach((Element) => {
+    if (parseInt(Element) == +Element) {
       arr.push(Element);
     } else {
-      arr.push(eval(arr.splice(-2, 1)[0] + Element + arr.pop()));
+      arr.push(this.eval(arr.splice(-2, 1)[0] + Element + arr.pop()));
     }
   });
   return arr[0];
 }
-
-console.log(rpnCalculator('15 7 1 1 + - / 3 * 2 1 1 + + -'))
+console.log(rpnCalculator('3 4 - 5 *'));
+console.log(rpnCalculator('15 7 1 1 + - / 3 * 2 1 1 + + -'));
 module.exports = rpnCalculator;
