@@ -4,17 +4,16 @@
  */
 
 function printBinary(number) {
-  let arrResp = [];
-  if (typeof number !== 'number' || number <= 0) return arrResp;
+  if (typeof number !== 'number') return [];
+  if (number <= 0) return [];
   maxValue = (2 ** number);
-  for (let i = 0; i < maxValue; i += 1){
+  const arrResp = [];
+  for (let i = 0; i < maxValue; i += 1) {
     arrResp.push(i.toString(2));
-  };
-  for (let i = 0; i < arrResp.length; i +=1){
-    if(arrResp[i].length < number){
+    if (arrResp[i].length < number){
       arrResp[i] = '0'.repeat(number - arrResp[i].length) + arrResp[i];
-    };
-  };
+  }
+}
   return arrResp;
-};
+}
 module.exports = printBinary;
