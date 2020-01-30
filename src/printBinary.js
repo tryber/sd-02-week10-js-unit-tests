@@ -19,7 +19,7 @@ function printBinary(number) {
     }
   }
 
-  return lista.slice(lista.length - 2 ** number);
+  return lista.slice(lista.length - (2 ** number));
 }
 
 module.exports = printBinary;
