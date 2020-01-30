@@ -19,7 +19,7 @@ function mape(arr, number) {
 
 function printBinary(number) {
   let arr = [];
-  if (number !== 0 || typeof number !== 'number') {
+  if (number !== 0 && typeof number === 'number') {
     arr = criaArray(arr, number);
     return mape(arr, number);
   } return arr;
