@@ -4,7 +4,7 @@
 */
 
 function numbers(...params) {
-  if(params.length !== 0) {
+  if (params.length !== 0) {
     const isNumber = !params.some(el => !(typeof el === 'number'));
     return isNumber;
   }
