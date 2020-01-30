@@ -7,13 +7,12 @@ const assert = require('assert');
 
 
 describe('#primeFactors', () => {
-  it ('tests', () => {
+  it('tests', () => {
     const expected = primeFactors(40);
-    let result =[2, 2, 2, 5];
+    let result = [2, 2, 2, 5];
     assert.deepStrictEqual(expected, result);
-    
+
     result = 'Error: Valor não inteiro.';
     assert.throws(() => { primeFactors('hi'); }, result);
-  })
-})
-
+  });
+});
