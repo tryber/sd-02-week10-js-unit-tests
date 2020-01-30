@@ -8,7 +8,7 @@ describe('#numbers', () => {
   it('test typeof', () => {
     expect(typeof numbers).toBe('function');
   });
-  
+
   it('the params 1, 4, 3, 2, 5 are numbers', () => {
     expect(numbers(1, 4, 3, 2, 5)).toBeTruthy();
   });
