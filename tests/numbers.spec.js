@@ -5,7 +5,7 @@ const numbers = require('../src/numbers');
 // A função deve retornar o valor false se algum elemento não for do tipo Number
 
 describe('#numbers', () => {
-  it('test typeof',() => {
+  it('test typeof', () => {
     expect(typeof numbers).toBe('function');
   });
   

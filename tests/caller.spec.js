@@ -11,7 +11,7 @@ describe('#Caller', () => {
     caller(fn, 0, 1);
     expect(typeof fn).toBe('function');
     expect(fn).toHaveBeenCalled();
-    expect(fn).toHaveBeenCalledWith(0,1);
+    expect(fn).toHaveBeenCalledWith(0, 1);
     done();
   });
 });
