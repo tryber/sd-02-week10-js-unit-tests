@@ -3,7 +3,7 @@
   e retorna uma lista com todos os números binários existentes com a quantidade ${number} de dígitos
  */
 
- function printBinary(number) {
+function printBinary(number) {
   let array = [];
   if (typeof number !== typeof 1 || number === 0) {
     return array;
@@ -14,7 +14,7 @@
   }
   array = array.map((binary) => {
     while (binary.length < number) {
-      binary= `0${binary}`;
+      binary = `0${binary}`;
     }
     return binary;
   });
