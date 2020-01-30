@@ -13,7 +13,6 @@ test('testando função rpnCalculator', () => {
   expect(rpnCalculator('3 4 5 * -')).toBe(-17);
   expect(rpnCalculator('3 4 - 5 *')).toBe(-5);
   expect(rpnCalculator('15 7 1 1 + - / 3 * 2 1 1 + + -')).toBe(5);
-
   expect(() => rpnCalculator('3 4 %')).toThrow();
   expect(() => rpnCalculator('3 4 - 5 **')).toThrow();
 });
