@@ -4,22 +4,19 @@
  */
 
 function printBinary(number) {
-  const lista = ['0', '1'];
+  // const lista = ['0', '1'];
 
-  for (let i = 1; i < number; i += 1) {
-    let tamanhoLista = lista.length;
+  // for (let i = 1; i < number; i += 1) {
+  //   let tamanhoLista = lista.length;
 
-    for (let j = 0; j < tamanhoLista; j += 1) {
-      lista.push(`${lista[j]}0`);
-      lista.push(`${lista[j]}1`);
-    }
-  }
-  console.log(lista)
+  //   for (let j = 0; j < tamanhoLista; j += 1) {
+  //     lista.push(`${lista[j]}0`);
+  //     lista.push(`${lista[j]}1`);
+  //   }
+  // }
+  // console.log(lista)
 
-  return lista.slice(lista.length - 2 ** number);
+  // return lista.slice(lista.length - 2 ** number);
 }
-
-let x = ['26', '4', '+', '2', '*']
-console.log(x.splice(-2,1)[0])
 
 module.exports = printBinary;
