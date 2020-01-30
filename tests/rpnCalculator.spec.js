@@ -12,7 +12,7 @@ describe('#rpnCalculator', () => {
   });
   it('Valida operadores', () => {
     expect(rpnCalculator).toThrowError(new Error());
-    expect(() =>{ rpnCalculator('!!!!!!!');}).toThrowError();
+    expect(() => { rpnCalculator('!!!!!!!'); }).toThrowError();
   });
   it('Valida função correta', () => {
     expect(rpnCalculator('3 4 +')).toBe(7);
