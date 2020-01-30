@@ -21,6 +21,6 @@ describe('last', () => {
 
 describe('last', () => {
     test('Se a função receber uma string, deve retornar o último caractere', () => {
-        xpect(last('giorgia')).toBe('a');
+        expect(last('giorgia')).toBe('a');
     });
 });
