@@ -13,11 +13,24 @@
   - os fatores primos para o número 12 são [2, 2, 3], pois:
     1) 2 * 2 * 3 = 12
     2) 2, que aparece duas vezes, e 3 são números primos
-
   Para mais informações acerca de fatores primos, acesse esta página:
     -> https://pt.wikipedia.org/wiki/Fator_primo
 */
 
-function primeFactors(number) {}
+function primeFactors(number) {
+  if (!Number.isInteger(number)) {
+    throw new Error('must be an integer');
+  }
+  const arrayResposta = [];
+  for (let i = 2; i <= number;) {
+    if (number % i === 0) {
+      number /= i;
+      arrayResposta.push(i);
+    } else {
+      i += 1;
+    }
+  }
+  return arrayResposta;
+}
 
 module.exports = primeFactors;
