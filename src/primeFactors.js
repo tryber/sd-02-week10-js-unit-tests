@@ -16,18 +16,19 @@
 */
 
 function primeFactors(number) {
-  if (!Number.isInteger(number))
-    throw new Error ('must be an integer');
+  if (!Number.isInteger(number)) {
+    throw new Error('must be an integer')
+  }
   const arrayResposta = [];
   for (let i = 2; i <= number;) {
     if (number % i === 0) {
-      number = number / i;
-      arrayResposta.push(i)
+      number /= i;
+      arrayResposta.push(i);
     } else {
-      i += 1
+      i += 1;
     }
   }
-  return arrayResposta
+  return arrayResposta;
 }
 
 module.exports = primeFactors;

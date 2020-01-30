@@ -6,7 +6,7 @@
 
 function last(...param) {
   if (arguments.length > 1) {
-    return param.slice(-1).toString()
+    return param.slice(-1).toString();
   }
   const lastParam = arguments[arguments.length - 1];
   return lastParam[lastParam.length - 1] || lastParam;

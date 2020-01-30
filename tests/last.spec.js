@@ -3,15 +3,13 @@ const last = require('../src/last');
 describe('série de testes para last.js', () => {
   it('primeiro teste: array', () => {
     expect(last(['gato', 'cachorro', 'papagaio'])).toBe('papagaio');
-  }
-  )
+  });
   it('segundo teste: string', () => {
-    expect(last('canguru')).toBe('u')
-  }
-  )
+    expect(last('canguru')).toBe('u');
+  });
   it('terceiro e último teste: vários parâmetros', () => {
-    expect(last(1, 2, 'vassoura', 'bode')).toBe('bode')
-  })
+    expect(last(1, 2, 'vassoura', 'bode')).toBe('bode');
+  });
 });
 
 

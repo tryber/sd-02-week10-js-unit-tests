@@ -8,7 +8,7 @@ function duplicate(params) {
   const repetidos = arrayParam
   .filter((valor, indiceDanovaArray) => arrayParam
   .indexOf(valor) === indiceDanovaArray);
-  return arrayParam.length != repetidos.length
+  return arrayParam.length !== repetidos.length;
 }
 
 module.exports = duplicate;

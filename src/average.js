@@ -6,10 +6,13 @@
 
 function average(...params) {
   const verificaNumeros = params.every(numero => (typeof numero === 'number'));
-  if (verificaNumeros === true && params.length != 0) {
-    return (Array.from(arguments).reduce((a, b) => a += b, 0)) / params.length
+  if (verificaNumeros === true && params.length !== 0) {
+    return (params.reduce((a, b) => { 
+      a += b;
+      return a; 
+    }, 0 )) / params.length;
   }
-  return undefined
+  return undefined;
 }
 
 module.exports = average;

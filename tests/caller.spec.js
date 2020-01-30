@@ -2,19 +2,13 @@ const caller = require('../src/caller');
 
 describe('testando a chamada da função', () => {
   const fn = jest.fn();
-  it('testando a chamada da função', () => {
-    caller(fn, 'a', 'b');
-    expect(fn).toHaveBeenCalled();
-    expect(fn).toHaveBeenCalledWith('a', 'b')
-  })
-
   it('testando a função em si', (done) => {
     caller(fn, 3, 'cachorro');
     expect(fn).toHaveBeenCalled();
     expect(fn).toHaveBeenCalledWith(3, 'cachorro');
     done();
-  })
   });
+});
 
 
 // A função deve receber 3 parâmetros
