@@ -6,7 +6,7 @@ describe('testes para a função primeFactors', () => {
     expect(primeFactors(40)).toEqual([2, 2, 2, 5]);
   })
   it('retorna um erro em caso de algo distinto de um número inteiro', () => {
-    expect(primeFactors(1.5)).toThrow(Error);
+    expect(() => (primeFactors('batata')).toThrow(Error));
   })
 }
 )
