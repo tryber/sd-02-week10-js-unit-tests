@@ -6,16 +6,18 @@
  */
 
 function rpnCalculator(string) {
+  if (string === undefined) throw new Error();
   const arr = [];
+  const operadores = ['+', '-', '/', '*'];
   string.split(' ').forEach((Element) => {
-    if (parseInt(Element, 10) === +Element) {
+    if (+Element) {
       arr.push(Element);
-    } else {
+    } else if (operadores.some(operador => operador === Element)) {
       arr.push(this.eval(arr.splice(-2, 1)[0] + Element + arr.pop()));
+    } else {
+      throw new Error();
     }
   });
   return arr[0];
 }
-console.log(rpnCalculator('3 4 - 5 *'));
-console.log(rpnCalculator('15 7 1 1 + - / 3 * 2 1 1 + + -'));
 module.exports = rpnCalculator;
