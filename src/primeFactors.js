@@ -18,6 +18,32 @@
     -> https://pt.wikipedia.org/wiki/Fator_primo
 */
 
-function primeFactors(number) {}
+function numeroPrimo(number) {
+  for (let i = 2; i < number / 2; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+const integerNumber = (number) => {
+  const arrResp = [];
+  for (i = 2; i <= number; i += 1) {
+    if (number % i === 0 && numeroPrimo(i)) {
+      arrResp.push(i);
+      number /= i;
+      i -= 1;
+    }
+  }
+  return arrResp;
+};
+
+function primeFactors(number) {
+  if (typeof number !== 'number') {
+    throw new Error('Only accepts an integer number');
+  }
+  return integerNumber(number);
+}
 
 module.exports = primeFactors;

@@ -17,21 +17,24 @@ describe('testing caller function', () => {
     expect(typeof mockCallback).toBe('function');
   });
 
-  test('testing with numbers', () => {
+  test('testing with numbers', done => {
     expect(caller(mockCallback, 10, 20)).toBe(30);
     expect(mockCallback).toHaveBeenCalledWith(10, 20);
     expect(mockCallback).toHaveBeenCalledTimes(1);
+    done();
   });
 
-  test('testing with strings', () => {
+  test('testing with strings', done => {
     expect(caller(mockCallback, 'projeto ', '10')).toBe('projeto 10');
     expect(mockCallback).toHaveBeenCalledWith('projeto ', '10');
     expect(mockCallback).toHaveBeenCalledTimes(1);
+    done();
   });
 
-  test('testing with arrays', () => {
+  test('testing with arrays', done => {
     expect(caller(mockCallback, ['projeto'], [' npm', 'test'])).toBe('projeto npm,test');
     expect(mockCallback).toHaveBeenCalledWith(['projeto'], [' npm', 'test']);
     expect(mockCallback).toHaveBeenCalledTimes(1);
+    done();
   });
 });
