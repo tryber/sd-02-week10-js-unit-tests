@@ -53,7 +53,7 @@ function rpnCalculator(expression) {
         break;
       default:
         i += 1;
-    }    
+    }
   }
 
   if (array.length > 1) {
