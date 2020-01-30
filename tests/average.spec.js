@@ -14,6 +14,6 @@ describe('#average', () => {
     expect(average(10, 'a', 7)).toBeUndefined();
     expect(average(10, false, 7)).toBeUndefined();
     expect(average(10, [3], 7)).toBeUndefined();
-    expect(average(10, {valor: 3}, 7)).toBeUndefined();
-  })
+    expect(average(10, { valor: 3 }, 7)).toBeUndefined();
+  });
 });
