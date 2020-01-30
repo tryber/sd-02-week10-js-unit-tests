@@ -10,7 +10,7 @@ function printBinary(number) {
   if (!Number.isInteger(number) || (number === 0)) {
     return [];
   }
-  for (let i = 0; i < 2**number; i += 1) {
+  for (let i = 0; i < 2 ** number; i += 1) {
     binary = i.toString(2);
     value = ((new Array(number + 1).join('0')) + binary).slice(-number);
     valores[i] = value;

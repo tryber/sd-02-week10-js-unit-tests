@@ -9,7 +9,7 @@ const caller = require('../src/caller');
 const mockCallback = jest.fn((a, b) => a + b);
 
 describe('caller function', () => {
-  it('expect mockCallback should be function', done => {
+  it('expect mockCallback should be function', (done) => {
     expect(typeof mockCallback).toBe('function');
     done();
   });
