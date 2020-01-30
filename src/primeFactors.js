@@ -20,7 +20,7 @@
 
 function primeFactors(number) {
   if (!Number.isInteger(number)) {
-    throw new Error;    
+    throw new Error();
   }
 
   const fatores = [];
@@ -30,7 +30,7 @@ function primeFactors(number) {
   for (let i = 2; i <= number; i += 1) {
     while (numeroDividido % i === 0) {
       fatores.push(i);
-      numeroDividido = numeroDividido / i;
+      numeroDividido /= i;
     }
   }
 
