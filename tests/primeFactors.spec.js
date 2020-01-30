@@ -1,6 +1,7 @@
 const primeFactors = require('../src/primeFactors');
 const assert = require('assert');
 
+
 const expectativa = primeFactors(40);
 
 let resultado = [2, 2, 2, 5];
