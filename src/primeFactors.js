@@ -36,14 +36,14 @@ const integerNumber = (number) => {
       i -= 1;
     }
   }
-  return arrResp;
+  return arrResp
 };
 
 function primeFactors(number) {
   if (typeof number !== 'number') {
     throw new Error('Only accepts an integer number');
   }
-  return integerNumber(number);
+  return integerNumber(number)
 }
 
 module.exports = primeFactors;

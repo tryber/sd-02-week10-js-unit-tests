@@ -7,6 +7,7 @@ const assert = require('assert');
 assert.strictEqual(typeof primeFactors, 'function');
 assert.deepStrictEqual(primeFactors(10), [2, 5]);
 assert.deepStrictEqual(primeFactors(187), [11, 17]);
+assert.deepStrictEqual(primeFactors(0), []);
 assert.deepStrictEqual(primeFactors(1.92), []);
 assert.deepStrictEqual(primeFactors(-80), []);
 assert.throws(primeFactors, /Only accepts an integer number$/);
