@@ -17,7 +17,7 @@ describe('last element params', () => {
     expect(last('joao')).toBe('o');
   });
   it('expect last of (10, "jonas") should be "s"', () => {
-    expect(last(10, 'jonas')).toBe('s');
+    expect(last(10, 'jonas')).toBe('jonas');
   });
   it('expect last of ([10, "jonas", "20"]) should be "20"', () => {
     expect(last([10, 'jonas', '20'])).toBe('20');

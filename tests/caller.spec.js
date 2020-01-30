@@ -14,13 +14,13 @@ describe('caller function', () => {
     done();
   });
 
-  it('expect caller(mockCallback, 5, 6) should be 11', done => {
+  it('expect caller(mockCallback, 5, 6) should be 11', (done) => {
     expect(caller(mockCallback, 5, 6)).toBe(11);
     expect(mockCallback).toHaveBeenCalledWith(5, 6);
     done();
   });
 
-  it('expect caller(mockCallback, julio, "[cezar]") should be', done => {
+  it('expect caller(mockCallback, julio, "[cezar]") should be', (done) => {
     expect(caller(mockCallback, 'julio', ['cezar'])).toEqual('juliocezar');
     expect(mockCallback).toHaveBeenCalledWith('julio', ['cezar']);
     done();
