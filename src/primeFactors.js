@@ -29,6 +29,5 @@ function primeFactors(number) {
     }
   }
   return arr;
-
 }
 module.exports = primeFactors;
