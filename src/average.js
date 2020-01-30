@@ -7,10 +7,10 @@
 function average(...params) {
   const verificaNumeros = params.every(numero => (typeof numero === 'number'));
   if (verificaNumeros === true && params.length !== 0) {
-    return (params.reduce((a, b) => { 
+    return (params.reduce((a, b) => {
       a += b;
-      return a; 
-    }, 0 )) / params.length;
+      return a;
+    }, 0)) / params.length;
   }
   return undefined;
 }

@@ -4,7 +4,7 @@
  */
 
 function duplicate(params) {
-  const arrayParam = Array.from(arguments)
+  const arrayParam = Array.from(arguments);
   const repetidos = arrayParam
   .filter((valor, indiceDanovaArray) => arrayParam
   .indexOf(valor) === indiceDanovaArray);

@@ -1,7 +1,9 @@
 /*
   A função primeFactors recebe um número inteiro ${number}
-  e retorna uma lista com todos os fatores desse parâmetro
+  e retorna uma lista com todos os fatores primos desse parâmetro
+
   Por exemplo:
+
   - os fatores primos para o número 15 são [3, 5], pois:
     1) 3 * 5 = 15
     2) ambos 3 e 5 são números primos
@@ -17,7 +19,7 @@
 
 function primeFactors(number) {
   if (!Number.isInteger(number)) {
-    throw new Error('must be an integer')
+    throw new Error('must be an integer');
   }
   const arrayResposta = [];
   for (let i = 2; i <= number;) {
