@@ -12,6 +12,9 @@ describe('#primeFactors', () => {
   it('expect factoring 112 [2, 2, 2, 2, 7]', () => {
     expect(primeFactors(112)).toEqual([2, 2, 2, 2, 7]);
   });
+  it('expect factoring 109200 [2, 2, 2, 2, 3, 5, 5, 7, 13]', () => {
+    expect(primeFactors(109200)).toEqual([2, 2, 2, 2, 3, 5, 5, 7, 13]);
+  });
   it('expect error message if dont send number param', () => {
     expect(primeFactors(3.12)).toBe('3.12 is not a integer number');
   });
