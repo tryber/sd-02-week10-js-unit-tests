@@ -19,17 +19,16 @@
 */
 function primeFactors(number) {
   const arr = [];
-  if (Number.isInteger(number)) {
-    for (let i = 2; i <= number;) {
-      if (number % i === 0) {
-        number /= i;
-        arr.push(i);
-      } else {
-        i += 1;
-      }
+  if (!Number.isInteger(number)) throw new Error('Não é um número');
+  for (let i = 2; i <= number;) {
+    if (number % i === 0) {
+      number /= i;
+      arr.push(i);
+    } else {
+      i += 1;
     }
-    return arr;
   }
-  throw new Error('Não é um número');
+  return arr;
+
 }
 module.exports = primeFactors;
