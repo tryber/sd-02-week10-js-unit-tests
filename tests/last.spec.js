@@ -7,9 +7,9 @@ const last = require('../src/last');
 // Se a função receber vários parâmetros, deve retornar o último parâmetro
 
 describe('last', () => {
-    test('A função deve retornar o último elemento do parâmetro passado', ( => {
-        
-    }))
+    test('A função deve retornar o último elemento do parâmetro passado', () => {
+        expect(last('a', 'b', 'c')).toBe('c');
+    })
 })
 
 
