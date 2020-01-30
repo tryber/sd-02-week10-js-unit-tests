@@ -4,7 +4,10 @@
 
   referência: https://en.wikipedia.org/wiki/Reverse_Polish_notation
  */
-
-function rpnCalculator(expression) {}
+const operatingRPN = (rpn, s = []) => {
+  rpn.split(' ').forEach(item =>
+    s.push(item == +item ? item : eval(s.splice(-2,1)[0] + t + s.pop())));
+  return s[0];
+}
 
 module.exports = rpnCalculator;

@@ -24,5 +24,8 @@
   "homepage": "https://github.com/betrybe/sd-01-week14-js-unit-tests#readme",
   "devDependencies": {
     "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "reverse-polish-notation": "^0.1.0"
   }
 }
