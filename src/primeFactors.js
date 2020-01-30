@@ -8,7 +8,7 @@ function numeroPrimo(num) {
       return false;
     }
   }
-    return true;
+  return true;
 }
 
 const integerNumber = (num) => {
