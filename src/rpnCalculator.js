@@ -32,7 +32,7 @@
 
 function rpnCalculator(rpn) {
   const arr = [];
-  if(!rpn) throw new Error('passe um parâmetro');
+  if (!rpn) throw new Error('passe um parâmetro');
   rpn.split(' ').forEach((item) => {
     if (+item) {
       arr.push(item);
