@@ -5,29 +5,55 @@
   referência: https://en.wikipedia.org/wiki/Reverse_Polish_notation
  */
 
+function adicaoParaRpn(array, i) {
+  const resultado = Number(array[i - 2]) + Number(array[i - 1]);
+  array.splice(i - 2, 3, resultado);
+  i -= 2;
+  return [array, i];
+}
+
+function subtracaoParaRpn(array, i) {
+  const resultado = Number(array[i - 2]) - Number(array[i - 1]);
+  array.splice(i - 2, 3, resultado);
+  i -= 2;
+  return [array, i];
+}
+
+function multiplicacaoParaRpn(array, i) {
+  const resultado = Number(array[i - 2]) * Number(array[i - 1]);
+  array.splice(i - 2, 3, resultado);
+  i -= 2;
+  return [array, i];
+}
+
+function divisaoParaRpn(array, i) {
+  const resultado = Number(array[i - 2]) / Number(array[i - 1]);
+  array.splice(i - 2, 3, resultado);
+  i -= 2;
+  return [array, i];
+}
+
 function rpnCalculator(expression) {
-  const array = expression.split(' ');
+  let array = expression.split(' ');
   let i = 0;
+
   while (i < array.length) {
-    if (array[i] === '+') {
-      let soma = Number(array[i - 2]) + Number(array[i - 1]);
-      array.splice(i - 2, 3, soma);
-      i -= 2;
-    } else if (array[i] === '-') {
-      let subtracao = Number(array[i - 2]) - Number(array[i - 1]);
-      array.splice(i - 2, 3, subtracao);
-      i -= 2;
-    } else if (array[i] === '*') {
-      let multiplicacao = Number(array[i - 2]) * Number(array[i - 1]);
-      array.splice(i - 2, 3, multiplicacao);
-      i -= 2;
-    } else if (array[i] === '/') {
-      let divisao = Number(array[i - 2]) / Number(array[i - 1]);
-      array.splice(i - 2, 3, divisao);
-      i -= 2;
-    } else {
-      i += 1;
-    }
+    switch (array[i]) {
+      case '+':
+        [array, i] = adicaoParaRpn(array, i);
+        break;
+      case '-':
+        [array, i] = subtracaoParaRpn(array, i);
+        break;
+      case '*':
+        [array, i] = multiplicacaoParaRpn(array, i);
+        break;
+      case '/':
+        [array, i] = divisaoParaRpn(array, i);
+        break;
+      default:
+        i += 1;
+    }    
   }
 
   if (array.length > 1) {
