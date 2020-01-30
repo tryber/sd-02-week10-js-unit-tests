@@ -8,6 +8,7 @@ const last = require('../src/last');
 
 describe('#last', () => {
   it('return last element', () => {
+    expect(typeof last).toBe('function');
     expect(last(1, 3, 4, 10)).toBe(10);
     expect(last('a', 3, 'c', 10, 'e')).toBe('e');
     expect(last([0, 1, 2, 5, 7, 9, 'a', 15])).toBe(15);

@@ -1,5 +1,4 @@
 const caller = require('../src/caller');
-
 // A função deve receber 3 parâmetros
 // O primeiro parâmetro deve ser uma função
 // O segundo e terceiro parâmetros podem ser de qualquer tipo
@@ -7,11 +6,12 @@ const caller = require('../src/caller');
 // e retornar o resultado
 
 describe('#Caller', () => {
-  const some = jest.fn((a, b) => a + b);
-  const div = jest.fn((a, b) => b / a);
+  const fn = jest.fn();
   it('Teste de função', (done) => {
-    expect(caller(some, 1, 2)).toBe(3);
-    expect(caller(div, 1, 2)).toBe(2);
+    caller(fn, 0, 1);
+    expect(typeof fn).toBe('function');
+    expect(fn).toHaveBeenCalled();
+    expect(fn).toHaveBeenCalledWith(0,1);
     done();
   });
 });

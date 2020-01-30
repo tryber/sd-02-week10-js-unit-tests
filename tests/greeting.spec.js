@@ -6,6 +6,7 @@ const greeting = require('../src/greeting');
 
 describe('#greeting', () => {
   it('Return Hello param in sucess', () => {
+    expect(typeof greeting).toBe('function')
     expect(greeting('Abacate')).toBe('Hello Abacate!');
     expect(greeting('Abacaxi')).toBe('Hello Abacaxi!');
     expect(greeting).toThrowError();

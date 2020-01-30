@@ -17,18 +17,19 @@
   Para mais informações acerca de fatores primos, acesse esta página:
     -> https://pt.wikipedia.org/wiki/Fator_primo
 */
-function noRest(number, arr, i) {
-  if (number % i === 0) arr.push(i);
-}
 function primeFactors(number) {
   const arr = [];
   if (Number.isInteger(number)) {
-    for (let i = 0; i <= number; i += 1) {
-      noRest(number, arr, i);
+    for (let i = 2; i <= number;) {
+      if (number % i === 0 ) {
+        number = number / i;
+        arr.push(i);
+      } else {
+        i += 1
+      }
     }
-    return arr;
+    return arr
   }
   throw new Error('Não é um número');
 }
-
 module.exports = primeFactors;
