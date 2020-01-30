@@ -11,4 +11,4 @@ assert.deepStrictEqual(expected, result);
 
 result = 'Error: Valor não inteiro.';
 
-assert.throws(() => { primeFactors('hi') }, result);
+assert.throws(() => { primeFactors('hi'); }, result);
