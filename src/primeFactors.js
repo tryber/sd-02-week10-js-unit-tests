@@ -18,6 +18,23 @@
     -> https://pt.wikipedia.org/wiki/Fator_primo
 */
 
-function primeFactors(number) {}
+function primeFactors(number) {
+  if (!Number.isInteger(number)) {
+    throw new Error;    
+  }
+
+  const fatores = [];
+
+  let numeroDividido = number;
+
+  for (let i = 2; i <= number; i += 1) {
+    while (numeroDividido % i === 0) {
+      fatores.push(i);
+      numeroDividido = numeroDividido / i;
+    }
+  }
+
+  return fatores;
+}
 
 module.exports = primeFactors;
