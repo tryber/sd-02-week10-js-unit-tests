@@ -8,7 +8,7 @@ describe('testando a chamada da função', () => {
     expect(fn).toHaveBeenCalledWith('a', 'b')
   })
 
-  it.skip('testando a função em si', (done) => {
+  it('testando a função em si', (done) => {
     caller(fn, 3, 'cachorro');
     expect(fn).toHaveBeenCalled();
     expect(fn).toHaveBeenCalledWith(3, 'cachorro');
