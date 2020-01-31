@@ -30,7 +30,7 @@ function rpnCalculator(expression) {
       result.pop();
       result.pop();
       result.push(controle);
-    } else if (Number.isInteger(parseInt(values[i]), dec)) {
+    } else if (Number.isInteger(parseInt(values[i]), 10)) {
       result.push(values[i]);
     } else {
       throw new Error('Operador inválido');
