@@ -4,7 +4,39 @@
 
   referência: https://en.wikipedia.org/wiki/Reverse_Polish_notation
  */
+function compareOperator(operator) {
+  const operators = ['+', '-', '/', '*'];
+  return operators.some(el => operator === el);
+}
 
-function rpnCalculator(expression) {}
+function Expressions(operator, a, b) {
+  let operators = {
+    '+': eval(`${a} + ${b}`),
+    '-': eval(`${a} - ${b}`),
+    '/': eval(`${a} / ${b}`),
+    '*': eval(`${a} * ${b}`)
+  }
+  return operators[operator];
+}
+
+function rpnCalculator(expression) {
+  let values = [];
+  let result = [];
+  let controle;
+  values = expression.split(' ');
+  for (let i = 0; i < values.length; i += 1) {
+    if (compareOperator(values[i])) {
+      controle = (Expressions(values[i], result[result.length - 2], result[result.length - 1]));
+      result.pop();
+      result.pop();
+      result.push(controle);
+    } else if (Number.isInteger(parseInt(values[i]))) {
+      result.push(values[i]);
+    } else {
+      throw new Error('Operador inválido');
+    }
+  }
+  return result[0];
+}
 
 module.exports = rpnCalculator;
