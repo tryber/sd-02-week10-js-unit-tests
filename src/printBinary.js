@@ -5,6 +5,7 @@
 
  // solução Miguel comentada - raciocínio de análise combinatória
 function printBinary(number) {
+  if (!number || number === 0) return [];
   const binaries = ['0', '1']; // array de números que serão combinados
   for (let i = 1; i < number; i += 1) { // loop para redefinir o valor do tamanho da lista
     const binariesLength = binaries.length;

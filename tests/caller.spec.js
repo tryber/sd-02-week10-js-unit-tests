@@ -21,10 +21,9 @@ describe('testando a função caller', () => {
     done();
   });
 
-  it('testando a função caso ela tenha comportamento', (done) => {
+  it('testando a função caso ela tenha comportamento', () => {
     const fn = jest.fn((a, b) => a + b);
     expect(caller(fn, 5.5, 5.5)).toEqual(11);
     expect(caller(fn, 'xablau', 'batatinha')).toEqual('xablaubatatinha');
-    done();
   });
 });
