@@ -12,4 +12,11 @@ describe('#duplicate', () => {
   it('the params 1, 2, 3, 2 are duplicated', () => {
     expect(duplicate(1, 2, 3, 2)).toBeTruthy();
   });
+
+  it('the params are strings', () => {
+    expect(duplicate('gato', 'cachorro', 'papagaio', 'cachorro')).toBeTruthy();
+    expect(duplicate('gato', 'cachorro', 'papagaio')).toBeFalsy();
+  });
 });
+
+// testar também com um parâmetro e sem parâmetro
