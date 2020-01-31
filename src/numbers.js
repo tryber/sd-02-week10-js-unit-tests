@@ -3,6 +3,12 @@
   e retorna `true` se todos os parâmetros forem do tipo Number e `false` caso contrário
 */
 
-function numbers(params) {}
+function numbers(...params) {
+  if (params.length !== 0) {
+    const isNumber = !params.some(el => !(typeof el === 'number'));
+    return isNumber;
+  }
+  return false;
+}
 
 module.exports = numbers;
