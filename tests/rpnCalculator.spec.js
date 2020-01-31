@@ -16,7 +16,6 @@ describe('#rpnCalculator', () => {
     expect(rpnCalculator('15 7 1 1 + - / 3 * 2 1 1 + + -')).toBe(5);
   });
   it('expected rpnCalculator(stringInvalid(x, **, z)) should be erro', () => {
-    //expect(rpnCalculator).toThrowError(new Error());
     expect(() => { rpnCalculator('!!!!!!!'); }).toThrowError('Operador inválido');
   });
 });

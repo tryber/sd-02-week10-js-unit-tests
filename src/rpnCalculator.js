@@ -10,18 +10,18 @@ function compareOperator(operator) {
 }
 
 function Expressions(operator, a, b) {
-  let operators = {
-    '+': eval(`${a} + ${b}`),
-    '-': eval(`${a} - ${b}`),
-    '/': eval(`${a} / ${b}`),
-    '*': eval(`${a} * ${b}`)
-  }
+  const operators = {
+    '+': this.eval(`${a} + ${b}`),
+    '-': this.eval(`${a} - ${b}`),
+    '/': this.eval(`${a} / ${b}`),
+    '*': this.eval(`${a} * ${b}`),
+  };
   return operators[operator];
 }
 
 function rpnCalculator(expression) {
   let values = [];
-  let result = [];
+  const result = [];
   let controle;
   values = expression.split(' ');
   for (let i = 0; i < values.length; i += 1) {
@@ -30,7 +30,7 @@ function rpnCalculator(expression) {
       result.pop();
       result.pop();
       result.push(controle);
-    } else if (Number.isInteger(parseInt(values[i]))) {
+    } else if (Number.isInteger(parseInt(values[i]), dec)) {
       result.push(values[i]);
     } else {
       throw new Error('Operador inválido');
