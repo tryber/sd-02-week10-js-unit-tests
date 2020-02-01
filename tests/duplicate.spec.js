@@ -5,6 +5,10 @@ const duplicate = require('../src/duplicate');
 // A função retornar true se existirem valores duplicados e false caso contrário
 
 describe('#duplicate', () => {
+  it('the param 2 are not duplicated, we have only one parameter here', () => {
+    expect(duplicate(2)).toBeFalsy();
+  });
+
   it('the params 1, 2, 3 are not duplicated', () => {
     expect(duplicate(1, 2, 3)).toBeFalsy();
   });
