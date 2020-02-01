@@ -4,9 +4,10 @@
   O parâmetro ${param} pode ser de qualquer tipo
 */
 
-function last(...param) {
+function last(param) {
   const lastParam = arguments[arguments.length - 1];
-  return lastParam[lastParam.length - 1] || lastParam;
+  if (arguments.length > 1) return lastParam;
+  return lastParam[lastParam.length - 1];
 }
 
 module.exports = last;
