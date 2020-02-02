@@ -6,15 +6,17 @@ const caller = require('../src/caller');
 // A função deve executar a função (primeiro parâmetro) com os outros parâmetros recebidos
 // e retornar o resultado
 
+const callBackFunction = jest.fn((a, b) => a * b);
 
-test('#caller', () => {
-  function sum(...params) {
-    return params.reduce((cc, current) => cc + current);
-  }
+describe('#caller', () => {
+  it("test result callBackFunction with 5 and 5", (done) => {
+    expect(caller(callBackFunction, 5, 5)).toBe(25);
+    expect(callBackFunction).toHaveBeenCalledWith(5, 5);
+    done();
+  });
 
-  function mult(...params) {
-    return params.reduce((cc, current) => cc * current);
-  }
-  expect(caller(sum, 2, 5)).toBe(7);
-  expect(caller(mult, 10, 10)).toBe(100);
+  it("test if callback of caller is function", (done) => {
+    expect(typeof callBackFunction).toBe('function');
+    done();
+  });
 });
