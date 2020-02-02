@@ -7,10 +7,22 @@ const printBinary = require('../src/printBinary');
 
 describe('#printBinary', () => {
   it('should print binary numbers until 1', () => {
-    expect(printBinary(1)).toBe(['0', '1']);
+    expect(printBinary(1)).toEqual(['0', '1']);
   });
 
   it('should print binary numbers until 2', () => {
-    expect(printBinary(2)).toBe(['00', '01', '10', '11']);
+    expect(printBinary(2)).toEqual(['00', '01', '10', '11']);
+  });
+
+  it('should print binary number at position 4', () => {
+    expect(printBinary(4)[4]).toBe('0100');
+  });
+
+  it('no parameter return empty array', () => {
+    expect(printBinary()).toEqual([]);
+  });
+
+  it('0 return empty array', () => {
+    expect(printBinary()).toEqual([]);
   });
 });
