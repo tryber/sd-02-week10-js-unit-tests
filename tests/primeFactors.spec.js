@@ -6,4 +6,4 @@ const primeFactors = require('../src/primeFactors');
 
 const expectWithPrimers = primeFactors(109200);
 
-assert.deepStrictEqual(expectWithPrimers, [ 2, 2, 2, 2, 3, 5, 5, 7, 13 ], 'Deu ruim, tenta de novo');
+assert.deepStrictEqual(expectWithPrimers, [2, 2, 2, 2, 3, 5, 5, 7, 13], 'Deu ruim, tenta de novo');
