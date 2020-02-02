@@ -9,6 +9,6 @@ describe('#greeting', () => {
     expect(greeting('Felipe')).toBe('Hello Felipe!');
   });
   it('expect error message if dont send param', () => {
-    expect(greeting).toThrowError(Error);
+    expect(greeting).toThrowError(Error('You must send something to greet!'));
   });
 });
