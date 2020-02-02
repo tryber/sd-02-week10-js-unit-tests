@@ -13,7 +13,7 @@ describe('#caller', () => {
   });
   it('concat strings', (done) => {
     expect(caller(soma, 'lucas', 'werner')).toBe('lucaswerner');
-    expect(soma).toHaveBeenCalledTimes(1);
+    expect(soma).toHaveBeenCalledTimes(3);
     done();
   });
 });
