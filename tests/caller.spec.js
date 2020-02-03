@@ -16,10 +16,10 @@ describe('#caller', () => {
     expect(soma).toBeCalledWith(4, 2);
     expect(soma).toHaveBeenCalledTimes(2);
     done();
-    });
+  });
   test('concat strings', (done) => {
     expect(caller(soma, 'giorgia', 'trybe')).toBe('giorgiatrybe');
     expect(soma).toHaveBeenCalledTimes(3);
     done();
-    });
+  });
 });

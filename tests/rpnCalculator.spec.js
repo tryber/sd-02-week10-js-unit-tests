@@ -10,5 +10,5 @@ const rpnCalculator = require('../src/rpnCalculator');
 describe('#rpnCalculator', () => {
   test('If function return his parameter', () => {
     expect(rpnCalculator(1)).toBe(1);
-    });
   });
+});
