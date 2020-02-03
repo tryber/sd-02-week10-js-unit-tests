@@ -7,3 +7,16 @@ const primeFactors = require('../src/primeFactors');
 const expectWithPrimers = primeFactors(109200);
 
 assert.deepStrictEqual(expectWithPrimers, [2, 2, 2, 2, 3, 5, 5, 7, 13], 'Deu ruim, tenta de novo');
+assert.throws(primeFactors, 'Just integers numbers.');
+
+// Descomente o código abaixo pra passar no Jest
+
+// describe('#primeFactors', () => {
+//   test('If called without an integer number', () => {
+//     try {
+//       primeFactors(112);
+//     } catch (Error) {
+//       expect(Error.message).toBe('Just integers Numbers.');
+//     }
+//   });
+// });

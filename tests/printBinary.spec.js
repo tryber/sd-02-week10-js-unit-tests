@@ -6,11 +6,15 @@ const printBinary = require('../src/printBinary');
 // Se a função receber o valor 0 (zero) um array vazio deve ser retornado
 
 describe('#printBinary', () => {
-  it('should print binary numbers until 1', () => {
-    expect(printBinary(1)).toBe(['0', '1']);
+  it('return empty array if something other than a number is passed', () => {
+    expect(printBinary('Felipe')).toEqual([]);
   });
 
-  it('should print binary numbers until 2', () => {
-    expect(printBinary(2)).toBe(['00', '01', '10', '11']);
-  });
+  // it('should print binary numbers until 1', () => {
+  //   expect(printBinary(1)).toEqual(['0', '1']);
+  // });
+
+  // it('should print binary numbers until 2', () => {
+  //   expect(printBinary(2)).toBe(['00', '01', '10', '11']);
+  // });
 });

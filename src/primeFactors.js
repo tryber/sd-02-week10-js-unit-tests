@@ -25,10 +25,10 @@ const integerNumber = (num) => {
 };
 
 function primeFactors(number) {
-  if (Number.isInteger(number)) {
-    return integerNumber(number);
+  if (!Number.isInteger(number)) {
+    throw new Error('Just integers Numbers.');
   }
-  return `${number} is not a integer number`;
+  return integerNumber(number);
 }
 
 module.exports = primeFactors;
