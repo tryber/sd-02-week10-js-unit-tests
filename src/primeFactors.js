@@ -19,14 +19,21 @@
 */
 
 function primeFactors(number) {
-  const arrayFactor = [];
-  for (let i = 1; i <= number; i += 1) {
-    if (number % i === 0) {
-      arrayFactor.push(i);
+  if (typeof number === 'number' && Number.isInteger(number)) {
+    let primes = [];
+    while (number > 1) {
+      for (let i = 2; i <= number; i += 1) {
+        if (number % i) continue;
+        primes.push(i);
+        number = number / i;
+        break;
+      }
     }
+    return primes;
+  } else {
+    throw new Error('Insira um número e que seja inteiro');
   }
-  if (Number.isInteger(number)) return arrayFactor;
-  throw new Error('Não é um número inteiro ou não é un número');
+
 }
 
 module.exports = primeFactors;
