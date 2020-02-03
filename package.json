@@ -1,4 +1,7 @@
 {
+  "watch": {
+    "test": "{src,test}/*.js"
+  },
   "name": "sd-01-week14-js-unit-tests",
   "version": "1.0.0",
   "description": "Project for module 14",
