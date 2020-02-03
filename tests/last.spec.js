@@ -12,7 +12,6 @@ describe('last', () => {
   });
 });
 
-
 describe('last', () => {
   test('Se a função receber uma lista, deve retornar o último elemento', () => {
     expect(last([1, 2, 3])).toBe(3);
