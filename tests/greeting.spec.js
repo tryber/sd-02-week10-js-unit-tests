@@ -6,6 +6,6 @@ const greeting = require('../src/greeting');
 
 
 test('Retornar greeting', () => {
-    expect(greeting('Fulano')).toBe('Hello Fulano!');
-    expect(() => greeting()).toThrow('You must send something to greet!');
+  expect(greeting('Fulano')).toBe('Hello Fulano!');
+  expect(() => greeting()).toThrow('You must send something to greet!');
 });
