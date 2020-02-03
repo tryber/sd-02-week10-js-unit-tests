@@ -1,7 +1,7 @@
 /* eslint no-unused-vars: ["error", { "args": "none" }] */
 /*
   A função last deve retornar o último elemento contido no parâmetro ${param}
-  O parâmetro ${param} pode ser de qualquer tipo
+  O parâmetro ${param} pode ser de qualquer tipo.
 */
 
 function last(param) {
@@ -10,3 +10,4 @@ function last(param) {
 }
 
 module.exports = last;
+

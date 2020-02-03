@@ -6,3 +6,9 @@ const rpnCalculator = require('../src/rpnCalculator');
 // Qualquer outro operador deve lançar um erro
 
 // ps: utilize os exemplos da documentação (README.md) para contrinuir com os testes
+
+describe('#rpnCalculator', () => {
+  test('If function return his parameter', () => {
+    expect(rpnCalculator(1)).toBe(1);
+  });
+});
