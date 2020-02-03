@@ -18,22 +18,25 @@
     -> https://pt.wikipedia.org/wiki/Fator_primo
 */
 
-function primeFactors(number) {
-  if (typeof number === 'number' && Number.isInteger(number)) {
-    let primes = [];
-    while (number > 1) {
-      for (let i = 2; i <= number; i += 1) {
-        if (number % i) continue;
+function primes(n) {
+  const primes = [];
+  while (n > 1) {
+    for (let i = 2; i <= n; i += 1) {
+      if (n % i === 0) {
         primes.push(i);
-        number = number / i;
+        n /= i;
         break;
       }
     }
-    return primes;
-  } else {
-    throw new Error('Insira um número e que seja inteiro');
   }
+  return primes;
+}
 
+function primeFactors(number) {
+  if (typeof number === 'number' && Number.isInteger(number)) {
+    return primes(number);
+  }
+  throw new Error('Insira um número e que seja inteiro');
 }
 
 module.exports = primeFactors;
