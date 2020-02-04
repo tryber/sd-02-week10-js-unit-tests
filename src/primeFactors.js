@@ -40,6 +40,7 @@ function primeBefore(number) {
 }
 
 function primeFactors(numberInput) {
+
   const divisor = primeBefore(numberInput);
   let indice = 0;
   const primes = [];
@@ -53,7 +54,10 @@ function primeFactors(numberInput) {
       primes.push(divisor[indice]);
     }
   }
-  return primes;
+  if (Number.isInteger(numberInput)) {
+    return primes;
+  }
+  throw new Error('Insira um número e que seja inteiro');
 }
 
 module.exports = primeFactors;

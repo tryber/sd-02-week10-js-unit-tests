@@ -7,4 +7,4 @@ const assert = require('assert');
 assert.deepStrictEqual(primeFactors(15), [3, 5]);
 assert.deepStrictEqual(primeFactors(9), [3, 3]);
 assert.deepStrictEqual(primeFactors(12), [2, 2, 3]);
-
+assert.throws(primeFactors, /Insira um número e que seja inteiro$/);
