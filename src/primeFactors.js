@@ -18,6 +18,34 @@
     -> https://pt.wikipedia.org/wiki/Fator_primo
 */
 
-function primeFactors(number) {}
+function isPrime(numero) {
+  let ePrimo = true;
+  for (let i = 2; i <= numero - 1; i += 1) {
+    if (numero % i === 0) ePrimo = false;
+  }
+  return ePrimo;
+}
+function encontrarFatores(number, fatoresPrimos) {
+  let p = number;
+  const resposta = [];
+  while (p > 1) {
+    if (p % fatoresPrimos[fatoresPrimos.length - 1] === 0) {
+      p /= fatoresPrimos[fatoresPrimos.length - 1];
+      resposta.push(fatoresPrimos[fatoresPrimos.length - 1]);
+    } else {
+      fatoresPrimos.pop();
+    }
+  }
+  return resposta.sort((a, b) => a - b);
+}
+
+function primeFactors(number) {
+  if (!Number.isInteger(number)) throw new Error('You must send an integer number!');
+  const nPrimos = [];
+  for (let i = 1; i <= number; i += 1) {
+    if (number % i === 0 && isPrime(i)) nPrimos.push(i);
+  }
+  return encontrarFatores(number, nPrimos);
+}
 
 module.exports = primeFactors;
