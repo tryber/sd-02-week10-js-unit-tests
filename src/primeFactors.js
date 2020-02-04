@@ -30,7 +30,7 @@ function prime(n) {
 }
 
 function primeBefore(number) {
-  let arrayPrime = [];
+  const arrayPrime = [];
   for (let x = 1; x <= number; x += 1) {
     if (prime(x)) {
       arrayPrime.push(x);
@@ -40,23 +40,20 @@ function primeBefore(number) {
 }
 
 function primeFactors(numberInput) {
-  if (Number.isInteger(numberInput)) {
-    let divisor = primeBefore(numberInput);
-    let indice = 0;
-    let primes = [];
-    while (numberInput > 1) {
-      if (numberInput % divisor[indice] === 0) {
-        numberInput /= divisor[indice];
-        primes.push(divisor[indice]);
-      } else {
-        indice += 1;
-        numberInput /= divisor[indice];
-        primes.push(divisor[indice]);
-      }
+  const divisor = primeBefore(numberInput);
+  let indice = 0;
+  const primes = [];
+  while (numberInput > 1) {
+    if (numberInput % divisor[indice] === 0) {
+      numberInput /= divisor[indice];
+      primes.push(divisor[indice]);
+    } else {
+      indice += 1;
+      numberInput /= divisor[indice];
+      primes.push(divisor[indice]);
     }
-    return primes;
   }
-  throw new Error('Insira um número e que seja inteiro');
+  return primes;
 }
 
 module.exports = primeFactors;
