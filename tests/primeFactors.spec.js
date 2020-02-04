@@ -12,4 +12,4 @@ test('teste primos', () => {
   assert.throws(() => {
     primeFactors(4.5);
   });
-})
+});
