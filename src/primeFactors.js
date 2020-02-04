@@ -18,32 +18,45 @@
     -> https://pt.wikipedia.org/wiki/Fator_primo
 */
 
-function primeFactors(number) {
-  if (Number.isInteger(number)) {
-    let divisor = 2;
+
+function prime(n) {
+  let count = 0;
+  for (let i = 1; i <= n; i += 1) {
+    if (n % i === 0) {
+      count += 1;
+    }
+  }
+  return count === 2;
+}
+
+function primeBefore(number) {
+  let arrayPrime = [];
+  for (let x = 1; x <= number; x += 1) {
+    if (prime(x)) {
+      arrayPrime.push(x);
+    }
+  }
+  return arrayPrime;
+}
+
+function primeFactors(numberInput) {
+  if (Number.isInteger(numberInput)) {
+    let divisor = primeBefore(numberInput);
+    let indice = 0;
     let primes = [];
-    while (number > 1) {
-      if (number % divisor === 0) {
-        number /= divisor;
-        primes.push(divisor);
-      } else if (divisor === 2 || ){
-        divisor += 1;
-        number /= divisor;
-        primes.push(divisor);
+    while (numberInput > 1) {
+      if (numberInput % divisor[indice] === 0) {
+        numberInput /= divisor[indice];
+        primes.push(divisor[indice]);
+      } else {
+        indice += 1;
+        numberInput /= divisor[indice];
+        primes.push(divisor[indice]);
       }
     }
-    return onlyPrimes(primes);
+    return primes;
   }
   throw new Error('Insira um número e que seja inteiro');
 }
-
-function onlyPrimes(n) {
-  const mapPrime = n.filter((item) => {
-    return (item === 2 || item % 2 !== 0)
-  });
-  return mapPrime;
-}
-
-console.log(primeFactors(1000000))
 
 module.exports = primeFactors;
