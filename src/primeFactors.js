@@ -40,7 +40,6 @@ function primeBefore(number) {
 }
 
 function primeFactors(numberInput) {
-
   const divisor = primeBefore(numberInput);
   let indice = 0;
   const primes = [];
